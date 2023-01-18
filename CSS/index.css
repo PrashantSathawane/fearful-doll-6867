@@ -32,7 +32,7 @@ body::-webkit-scrollbar {
 #logo-1 {
   margin-left: -55%;
 }
-#logo-1 img{
+#logo-1 img {
   width: 200px;
 }
 #Host-page-1 p {
@@ -144,7 +144,7 @@ body::-webkit-scrollbar {
 #image-overlay-1 h3 {
   font-size: 25px;
 }
-#image-overlay-2 p{
+#image-overlay-2 p {
   font-size: 25px;
 }
 #trip-details {
@@ -277,3 +277,197 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 
+.container {
+  position: absolute;
+  height: 500px;
+  width: 90%;
+  top: 10%;
+  left: calc(30% - 300px);
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: -50px;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-30px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 60px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 20px;
+  top: 60%;
+  font-family: Poppins;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 154, 217, 1) 0%,
+    rgba(217, 147, 0, 1) 65%,
+    rgba(255, 186, 0, 1) 100%
+  );
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+#container-1 {
+  position: relative;
+  margin-top: 100px;
+  padding: 50px;
+  background-color: rgb(222, 222, 222);
+  height: 600px;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#href-1 {
+  font-family: Poppins;
+  display: flex;
+  justify-content: space-around;
+  background-color: #383838;
+  color: white;
+  cursor: pointer;
+  padding-top: 30px;
+}
+#footer-2 {
+  background-color: #383838;
+  font-family: Poppins;
+  color: white;
+  margin-top: -20px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
+#footer-2 p {
+  padding-left: 120px;
+  margin-top: 20px;
+}
+#footer-2 h3 {
+  padding-left: 120px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+#footer-2 h4 {
+  padding-left: 120px;
+  margin-top: 20px;
+}
+#inner-href-1:hover {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+#inner-href-2:hover {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+#inner-href-3:hover {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+#inner-href-4:hover {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+#footer-3 {
+  font-family: Poppins;
+  background-color: rgb(102, 102, 102);
+  color: white;
+  padding-left: 120px;
+  padding-top: 30px;
+}
+#H1 {
+  padding-top: 20px;
+}
+#H2 {
+  padding-top: 20px;
+}
+#H3 {
+  display: grid;
+  padding-top: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 50px);
+  font-weight: lighter;
+  font-size: 15px;
+}
+#ive {
+  display: flex;
+  gap: 19%;
+}
+#ive p {
+  font-weight: lighter;
+  font-size: 15px;
+}
+#social-media {
+  padding-top: 20px;
+}
+#btn-logo {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+}
+#btn-logo img {
+  width: 40px;
+}
+#Nsl {
+  display: flex;
+  gap: 30%;
+}
