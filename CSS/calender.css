@@ -1,0 +1,84 @@
+body {
+    /* margin-top: 200px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* border: 1px solid; */
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  *, *::after, *::before {
+    box-sizing: border-box;
+   
+  }
+  #nextMonth{
+   position: relative;
+   top: 0px;
+   right: 0px;
+  }
+
+  #navbar{
+    display: flex;
+    padding: 50px 0px 50px 50px;
+   align-items: center;
+  }
+  #navbar>a>img{
+    width: 23px;
+  background-color: white;
+  margin-right: 10px;
+  
+  
+  }
+  #navbar>a+div{
+    font-family: "IBM Plex Sans";
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-family:"Segoe UI", Helvetica, Arial, sans-serif
+  }
+
+  button{
+   
+    background-color: rgb(16,163,16); 
+    border: none;
+    border-radius: 4px;
+    padding: 16px 20px;
+    width: 640px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+   cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #fff;
+    margin: 0 auto;
+}
+#btn{
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    top: 400px;
+    width: 100%;
+    box-shadow: 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%), 0 5px 5px -3px rgb(0 0 0 / 20%);
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background:transparent;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+a{
+  text-decoration: none;
+}
+  
