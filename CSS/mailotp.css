@@ -51,12 +51,15 @@ body {
     width: 70%;
     border-radius: 5px;
     border: 2px solid darkgray;
+    justify-content: space-around;
+    
     transition: border-color 0.3s;
 
 }
 
 .details .Input {
     border: 2px solid green;
+   
 
 }
 
@@ -68,7 +71,7 @@ body {
 .details .input>input {
     height: 30px;
     width: 80%;
-
+/* border: 2px solid red; */
     font-size: 15px;
     font-size: 100;
     margin-left: 10px;
@@ -76,10 +79,7 @@ body {
     visibility: visible;
     outline: none;
     border: 0px;
-
-
 }
-
 
 
 .container>#heading {

@@ -45,7 +45,7 @@ body {
     gap: 50px;
 }
 
-.details .input {
+.details .input1,.details .input2 {
     display: flex;
 
     align-items: center;
@@ -67,7 +67,7 @@ body {
 
 }
 
-.details .input>input {
+.details .input1>input,.details .input2>input {
     height: 30px;
     width: 80%;
 

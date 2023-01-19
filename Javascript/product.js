@@ -82,3 +82,6 @@ function showMadeCards(fetCarDetailsData){
 individualCarcard.innerHTML = listOfcards;
   
 }
+
+
+
