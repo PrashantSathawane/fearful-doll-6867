@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/calender.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="../index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2VpEv_6Ei9xQ8pQ1TEg5TS5_sMFWYjmP-vrDOC1M3386sPWRHdrt5twPP3y3zSFMZqaM&usqp=CAU" alt="" id="arrow"></a>
+        <div>Choose Trip Dates</div>
+    </div>
+    <date-picker format="DDD, DD-MMM YYYY" position="down" visible id="currMonth"></date-picker>
+    <date-picker format="DDD, DD-MMM YYYY" position="down" visible id="nextMonth"></date-picker>
+
+    <input id="slider" type="range" min="0" max="12" step="1" oninput="sliderChange(this.value)">
+    <output class="sliderVal"> </output>
+
+    <input id="slider" type="range" min="0" max="12" step="1" oninput="sliderChange1(this.value)">
+    <output class="sliderVal1"> </output>
+
+    <div id="btn"><a href="../HTML/product.html"><button>CONTINUE</button></a></div>
+    
+</body>
+</html>
+<script src="../Javascript/calender.js"></script>
