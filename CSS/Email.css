@@ -1,0 +1,114 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#arrow {
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+.arrow {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+
+.Emailid {
+    margin-left: 30%;
+
+}
+
+.Emailid>h1 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: arial;
+    font-style: normal;
+}
+
+.Emailid>p {
+    font-size: 14px;
+    font-weight: 700;
+
+    color: rgb(24, 22, 22);
+}
+
+.details {
+    width: 60%;
+    display: flex;
+    margin: auto;
+
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 40px;
+
+    gap: 20px;
+}
+
+.details .input {
+    display: flex;
+
+    align-items: center;
+    height: 60px;
+    width: 70%;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+    transition: border-color 0.3s;
+
+}
+
+.details .Input {
+    border: 2px solid green;
+
+}
+
+.details .rong {
+    border: 2px solid red;
+
+}
+
+.details .input>input {
+    height: 30px;
+    width: 80%;
+
+    font-size: 15px;
+    font-size: 100;
+    margin-left: 10px;
+
+    visibility: visible;
+    outline: none;
+    border: 0px;
+
+
+}
+
+
+
+.container>#heading {
+    margin-left: 31%;
+    margin-top: 1px;
+    color: red;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: Times;
+
+}
+
+.btn {
+
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    width: 32%;
+    height: 3rem;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #CFD8DC;
+    margin-left: 35%;
+    border: none;
+}
+
+.Btn {
+    background-color: green;
+
+}

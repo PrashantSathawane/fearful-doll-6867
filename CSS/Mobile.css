@@ -1,0 +1,133 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#arrow {
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+.arrow {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.mobilnumber {
+    margin-left: 30%;
+
+
+}
+
+.mobilnumber>h1 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: arial;
+    font-style: normal;
+}
+
+.details {
+    width: 40%;
+    display: flex;
+    margin: auto;
+
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 40px;
+
+
+    gap: 20px;
+}
+
+.details>.flagsymbol {
+    display: flex;
+    width: 20%;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid green;
+
+    gap: 10px;
+    align-items: center;
+
+}
+
+.details>.flagsymbol>div {
+    display: flex;
+    align-items: center;
+
+    width: 30%;
+
+}
+
+.flagsymbol img {
+    width: 90%;
+    margin-left: 10px;
+}
+
+.flagsymbol p {
+    margin-left: 4px;
+}
+
+.details .input {
+    display: flex;
+
+    align-items: center;
+    height: 60px;
+    width: 70%;
+    border-radius: 5px;
+    border: 2px solid gray;
+
+
+}
+
+.details .Input {
+    border: 2px solid green;
+
+}
+
+.details .rong {
+    border: 2px solid red;
+
+}
+
+.details .input>input {
+    height: 30px;
+    font-size: 15px;
+    font-size: 100;
+    margin-left: 10px;
+
+    visibility: visible;
+    outline: none;
+    border: 0px;
+
+}
+
+.btn {
+
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    width: 32%;
+    height: 3rem;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #CFD8DC;
+    margin-left: 35%;
+    border: none;
+}
+
+.Btn {
+    background-color: green;
+
+}
+
+
+.container>#heading {
+    margin-left: 40%;
+    margin-top: 1px;
+    color: red;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: Times;
+
+}
