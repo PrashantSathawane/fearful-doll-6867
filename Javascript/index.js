@@ -220,3 +220,52 @@ function Help_support() {
   let about = document.getElementById("footer-2");
   about.innerHTML = `<h3>Find more information about Zoomcar Help and support  <a style = "color:white;" href="">here</a></h3>`;
 }
+
+function locto() {
+  let loc = document.getElementById("locator-1");
+  loc.innerHTML = ` <div
+  style="
+    background-color: white;
+    width: 500px;
+    height: 50px;
+    border: solid 1px;
+    border-color: green;
+    border-radius: 8px;
+    margin-top: 20px;
+  "
+>
+  <div
+    style="
+      display: flex;
+      align-items: center;
+      margin-top: 3%;
+      gap: 10px;
+      margin-left: 10px;
+    "
+  >
+    <img
+      style="width: 10px"
+      src="https://t3.ftcdn.net/jpg/05/31/66/02/240_F_531660213_Cc7tcOlS60cGwglFgeeaPj2rmTP4KtYz.jpg"
+      alt=""
+    />
+    <a style="color: rgb(152, 152, 152);text-decoration: none;" href="../HTML/calender.html">
+    <p
+      style="
+        font-family: Poppins;
+        text-align: center;
+        font-size: 12px;
+        color: rgb(152, 152, 152);
+      "
+    >
+    
+      Pick Date 10.10.2021 ---> 11.10.2021
+    </p></a>
+  </div>
+</div>
+
+`;
+}
+function locto0() {
+  let syc = document.getElementById("locator-1");
+  syc.innerHTML = ` `;
+}
