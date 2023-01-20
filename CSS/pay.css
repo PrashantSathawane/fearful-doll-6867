@@ -629,7 +629,7 @@
 }
 .same>div:nth-child(2){
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 10px; 
 }
 .content2>div:nth-child(1){
   display:flex;
@@ -640,4 +640,123 @@
 .content2>div:nth-child(1) img{
   width:32px;
   margin:5px 10px;
+}
+.content2>div:nth-child(2)>input{
+  width:90%;
+  margin:20px 10px;
+  
+}
+
+.content2>div:nth-child(1) p,.content3>div:nth-child(1) p,
+.content4>div:nth-child(1) p{
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.24px;
+  color: #1f1f1f;
+  margin-bottom: 0;
+}
+.content2>div:nth-child(1) span,.content3>div:nth-child(1) span,
+.content4>div:nth-child(1) span{
+  font-family: "IBM Plex Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: #666;
+}
+.content2>div:nth-child(3)>input:nth-child(2){
+  width:30%;  
+}
+.content2{
+  margin-top:40px;
+}
+.content2 input[type="number"],#new-upi1 input[type="text"],#new-upi2 input[type="text"],#new-upi3 input[type="text"]{
+  padding:20px 10px;
+  border:1px solid #e0e0e0;
+  border-radius:4px;
+  margin:10px;
+}
+
+.content3,.content4{
+  margin-top: 40px;
+}
+.content3>div:nth-child(1),.content4>div:nth-child(1){
+  display:flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  margin:10px;
+}
+.content3>div:nth-child(1) img,
+.content4>div:nth-child(1) img{
+  width:32px;
+  margin:5px 10px;
+}
+
+.content3>div:nth-child(2),.content4>div:nth-child(2){
+  margin-top: 40px;
+  display: flex;
+} 
+.content4>div{
+  display: flex;
+}
+.img3{
+  width:32px;
+  margin-right: 20px;
+  
+}
+.paytm{
+ padding-top:10px;
+ 
+  font-size: 14px;
+}
+#paytm, .bank-list{
+  
+  padding:10px;  
+  margin-left: 10px;
+  margin-right:10px;
+}
+ #but1,#new-upi2 button,#new-upi3 button{
+ padding:20px 10px;
+ border-radius: 4px;
+ border:none;
+ color:white;
+ background-color:
+ #e0e0e0
+}
+#but1:hover,#new-upi2 button:hover,#new-upi3 button:hover{
+  cursor: pointer;
+}
+/* .act{
+  background-color:#10a310 ;
+} */
+ /* .button{
+  background-color: #10a310;
+}
+.button:hover{
+  cursor: pointer;
+} */
+#payButton{
+  padding-bottom: 40px;
+}
+#paybtn{
+  font-size:14px;
+  padding:15px 25px;
+  border:none;
+  color:rgb(137, 136, 136);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor:pointer;
+  margin:15px;
+  border-radius: 4px;
+  
+}
+
+.content4>div:hover{
+  cursor: pointer;
+  
+}
+.bank-list{
+  border-bottom: 1px solid 
+  #d2d2d2;
 }
