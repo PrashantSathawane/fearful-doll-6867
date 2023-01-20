@@ -89,6 +89,15 @@ function makeasCards(CarImage, Rating, Cartype, Seats, CarTitle, totalTravel, fu
 
 
 // function to append the designed cards
+
+function showMadeCards(fetCarDetailsData){
+    console.log(fetCarDetailsData)
+    let listOfcards = 
+    fetCarDetailsData.map((item)=> makeasCards(item.images,item.rating,item.carType,item.Seats,item.title,item.totalTravel,item.fuelType,item.transmission,item.price)).join("");
+
+individualCarcard.innerHTML = listOfcards;
+  
+=======
 function showMadeCards(fetCarDetailsData) {
   // console.log(fetCarDetailsData)
   individualCarcard.innerHTML = null;
@@ -125,6 +134,7 @@ function SendIndividualData(obj) {
   arr.push(obj);
   localStorage.setItem("Individual_car_data", JSON.stringify(arr));
   window.location.assign("./individualproduct.html");
+
 }
 
 
@@ -292,6 +302,7 @@ function filterbyAllRate(a){
   let arr = needTosortArr.filter((item)=> item.ratestar>= a);
   showMadeCards(arr);
 }
+
 
 
 

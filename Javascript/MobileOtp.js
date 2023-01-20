@@ -13,7 +13,7 @@ contact.innerHTML=`OTP was sent to +91${data[i]}`
 delete datalist[i]
 }
 }
-console.log(datalist);
+// console.log(datalist);
 
 function changecolor() {
     sowcolor.classList.add('Input')
@@ -27,7 +27,8 @@ inputvalue.addEventListener('input', () => {
         sowcolor.classList.remove('rong')
         btn.classList.add('Btn')
         btn.addEventListener('click', () => {
-            window.location.assign('./Mobil.html')
+            window.location.assign('./Resister.html')
+            
         })
     }
     else {
