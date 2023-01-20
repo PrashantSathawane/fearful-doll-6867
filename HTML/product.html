@@ -12,41 +12,10 @@
 </head>
 
 <body>
-    <!-- the outermost container  -->
-    <!-- navabar -->
+
+    <!-- start code injected on 20 Jan 1:00 am (remove this line before push) -->
     <!-- Side nav strting -->
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="li-main">
-            <div class="li-1">
-                <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="" />
-                <p>Login or Signup</p>
-            </div>
-            <div class="li-1">
-                <img src="https://cdn-icons-png.flaticon.com/512/535/535188.png" alt="" />
-                <p>Change City</p>
-            </div>
-            <div class="li-1">
-                <img src="https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg" alt="" />
-                <p>Become a host</p>
-            </div>
-            <div class="li-1">
-                <img src="https://cdn-icons-png.flaticon.com/512/4252/4252474.png" alt="" />
-                <p>Zoom fleet vehicle policies</p>
-            </div>
-            <div class="li-1">
-                <img src="https://cdn-icons-png.flaticon.com/512/4252/4252474.png" alt="" />
-                <p>Zoom host vehicle policies</p>
-            </div>
-            <div class="li-1">
-                <img src="https://cdn-icons-png.flaticon.com/512/5617/5617243.png" alt="" />
-                <p>Help & Support</p>
-            </div>
-        </div>
-    </div>
-    <!-- side nav ending -->
-      <!-- Side nav strting -->
-      <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
@@ -56,7 +25,12 @@
               src="https://cdn-icons-png.flaticon.com/512/456/456212.png"
               alt=""
             />
-            <p>Login or Signup</p>
+            <a
+              style="color: black; text-decoration: none"
+              href="./HTML/Login.html"
+            >
+              <p>Login or Signup</p></a
+            >
           </div>
           <div class="li-1">
             <img
@@ -66,10 +40,7 @@
             <p>Change City</p>
           </div>
           <div class="li-1">
-            <img
-              src="https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg"
-              alt=""
-            />
+            <img src="https://www.linkpicture.com/q/svfbiji.png" alt="" />
             <p>Become a host</p>
           </div>
           <div class="li-1">
@@ -107,20 +78,17 @@
           <img src="https://www.linkpicture.com/q/svfb-1.png" alt="">
         </div>
         <div id="Host-page-1">
-          <img
-            src="https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg"
-            alt=""
-          />
+          <img src="https://www.linkpicture.com/q/svfbiji.png" alt="" />
           <p>Become a host</p>
         </div>
         <div id="Login-direct">
-          <h4>Login/Signup</h4>
+          <a style="color: white; text-decoration: none" href="./HTML/Login.html"
+            ><h4>Login/Signup</h4></a
+          >
         </div>
       </div>
-      <script src="./Javascript/index.js"></script>
       <!-- Navbar Ending -->
-
-
+<!-- end of code injected on 20 Jan 1:00 am (remove this line before push)-->
 
 
 
@@ -137,7 +105,7 @@
                     <span>
                         <h3 style="display: inline;">Sort & Filters</h3>
                     </span>
-                    <button>RESET</button>
+                    <button id="RESET-BTN">RESET</button>
                 </div>
 
                 <div class="Sortby-heading">
@@ -210,7 +178,7 @@
 
 
                 <div class="sortIcons">
-                    <div onclick="filterHatchBack(`Hatch Back`)">
+                    <div onclick="filterHatchBack(`Hatchback`)">
                         <i class="fa-solid fa-car-side"></i>
                         <p>Hatch Back</p>
                     </div>
@@ -239,15 +207,15 @@
                         <i class="fa-solid fa-suitcase-rolling"></i>
                         <p>4 Seater</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyfiveSeats(`5 Seats`)">
                         <i class="fa-solid fa-suitcase-rolling"></i>
                         <p>5 Seater</p>
                     </div>
-                    <div>
+                    <div onclick="filterbySevenSeats(`7 Seats`)">
                         <i class="fa-solid fa-suitcase-rolling"></i>
                         <p>7 Seater</p>
                     </div>
-
+                  
                 </div>
 
 
@@ -257,23 +225,23 @@
                 </div>
 
                 <div class="sortIcons">
-                    <div>
+                    <div onclick="filterbyPetrol(`Petrol`)">
                         <i class="fa-solid fa-oil-can"></i>
                         <p>Petrol</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyDiesel(`Diesel`)">
                         <i class="fa-solid fa-gas-pump"></i>
                         <p>Diesel</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyCNG(`CNG`)">
                         <i class="fa-solid fa-leaf"></i>
                         <p>CNG</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyElectric(`Electric`)">
                         <i class="fa-solid fa-charging-station"></i>
                         <p>Electric</p>
                     </div>
-
+                   
                 </div>
 
 
@@ -284,15 +252,15 @@
                 </div>
 
                 <div class="sortIcons grid-change-transmission">
-                    <div>
+                    <div onclick="filterbyManual(`Manual`)">
                         <i class="fa-sharp fa-solid fa-sitemap"></i>
                         <p>Manual</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyAutomatic(`Automatic`)">
                         <i class="fa-solid fa-robot"></i>
                         <p>Automatic</p>
                     </div>
-
+                  
                 </div>
 
                 <!-- ratings -->
@@ -302,13 +270,13 @@
                 </div>
 
                 <div class="sortIcons grid-change-seats-and-rating">
-                    <div>
+                    <div onclick="filterbyThreeplusRate(`3`)">
                         <p>3+ rated</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyFourplusRate(`4`)">
                         <p>4+ rated</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyAllRate(``)">
                         <p>All</p>
                     </div>
 

@@ -1,3 +1,4 @@
+// my code
 // getting the elements from the HTML
 let individualCarcard = document.getElementById("car-search-result");
 let search_input_Bar = document.getElementById("search-car-input");
@@ -8,9 +9,7 @@ const api_url = "https://63c634eb4ebaa80285414b4d.mockapi.io/Cars"
 let catch_icon_div_add_function = document.getElementsByClassName("catch-and-addfunctionality");
 let needTosortArr = [];
 
-
-
-
+let RESET_BTN = document.getElementById("RESET-BTN");
 
 // fetched car details
 fetCarDetails(api_url, search_input_Bar.value)
@@ -22,7 +21,6 @@ function fetCarDetails(para, Searchstr) {
     return res.json()
   })
     .then((data) => {
-      console.log(data);
       needTosortArr = data;
       showMadeCards(data);
     })
@@ -207,31 +205,103 @@ function PopularitySort(Popularity) {
 // various functions to filter
 
 // filter the hatchback cars
+// filter the hatchback cars
 function filterHatchBack(a) {
-  sortArr = sortArr.filter((item) => item.carType == "Sedan");
-  showMadeCards(sortArr);
-  console.log(sortArr);
+  fetCarDetails(api_url, a)  //
+  // console.log(sortArr);
 }
 
 // filter the Sedan;
 function filterSedan(a) {
-  sortArr =  sortArr.filter((item) => item.carType == a);
-  showMadeCards(sortArr);
-  console.log(sortArr);
+  fetCarDetails(api_url, a)
 }
 
 
 // filter the SUV;
 function filterSUV(a) {
-  sortArr = sortArr.filter((item) => item.carType == a);
-  showMadeCards(sortArr);
-  console.log(sortArr);
+  fetCarDetails(api_url, a)
 }
 
 
 
 
+RESET_BTN.addEventListener("click",()=>{
+  fetCarDetails(api_url, "");
+})
 
+
+// seats filter
+// 5 seats
+function filterbyfiveSeats(a){
+  fetCarDetails(api_url, a);
+}
+
+// 7 seats
+function filterbySevenSeats(a){
+  fetCarDetails(api_url, a);
+}
+
+
+
+// fuel type filters
+// petrol
+function filterbyPetrol(a){
+  fetCarDetails(api_url, a);
+}
+
+// diesel
+function filterbyDiesel(a){
+  fetCarDetails(api_url, a);
+}
+
+// CNG
+function filterbyCNG(a){
+  // fetCarDetails(api_url, a);
+}
+
+// Electric
+function filterbyElectric(a){
+  // fetCarDetails(api_url, a);
+}
+
+
+
+// filter by manual or automatic
+// manual
+function filterbyManual(a){
+  fetCarDetails(api_url, a);
+}
+
+
+// automatic
+function filterbyAutomatic(a){
+  fetCarDetails(api_url, a);
+}
+
+
+
+
+// filter by ratings
+// 3+
+function filterbyThreeplusRate(a){
+  a = +a;
+  let arr = needTosortArr.filter((item)=> item.ratestar>= a);
+  showMadeCards(arr);
+}
+
+// 4+
+function filterbyFourplusRate(a){
+  a = +a;
+  let arr = needTosortArr.filter((item)=> item.ratestar>= a);
+  showMadeCards(arr);
+}
+
+// all
+function filterbyAllRate(a){
+  a = +a;
+  let arr = needTosortArr.filter((item)=> item.ratestar>= a);
+  showMadeCards(arr);
+}
 
 
 
