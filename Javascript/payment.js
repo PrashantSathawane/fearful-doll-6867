@@ -1,5 +1,21 @@
 let offer= document.getElementById('offer');
 let container= document.querySelector(".change-container")
+
+var car=JSON.parse(localStorage.getItem("Individual_car_data"));
+let carname;
+let carprice;
+let carimage;
+let transmission;
+let fualtype;
+car.forEach(el =>{
+    carname=el.CarTitle;
+    carprice=el.CarPrice;
+    carimage=el.CarImage;
+    transmission=el.transmission;
+    fualtype=el.fualtype;
+})
+
+console.log(carname,carprice)
 offer.addEventListener('click',()=>{
     // let payOption= document.createElement("div")
     // payOption.classList.add("content")
@@ -15,7 +31,7 @@ offer.addEventListener('click',()=>{
        <div>
         <p>
         Payment Offers </p>
-        <span>Amount: ₹9394.0</span>  
+        <span>Amount: ₹${carprice}.0</span>  
        </div>
       </div>  
     `
@@ -37,13 +53,13 @@ upi.addEventListener('click',()=>{
         <div >
           <div>
             <p>Select a UPI App</p>
-            <span>Amount: ₹9987.0</span>
+            <span>Amount: ₹${carprice}.0</span>
            </div>
           <div>
              <img src="https://www.zoomcar.com/build/760ee3019ff287f2caed7e40c92b1ca5.png">
           </div>  
         </div>
-        <div class="pre">PREFERRED PAYMENT OPTIONS</div>
+        <div class="pre" style="background-color: #f5f5f5">PREFERRED PAYMENT OPTIONS</div>
         <div class="same gpay">
           <div>
            <img src="https://zoomcar-assets.zoomcar.com/images/original/4aef7198237a74ac187c75d270f8d516cfaa5e9b.png?1584453889">
@@ -75,7 +91,10 @@ upi.addEventListener('click',()=>{
     let upiimg= document.querySelector(".same img")
     let p= document.querySelector(".same p")
     let newupi1= document.querySelector(".gpay")
+    
     newupi1.addEventListener("click",()=>{
+      newupi2.style.backgroundColor="#fff"
+    newupi3.style.backgroundColor="#fff"
        newupi1.style.backgroundColor="#f5f5f5"
        upiimg.style.backgroundColor="#f5f5f5"
        p.style.backgroundColor="#f5f5f5"  
@@ -108,6 +127,8 @@ upi.addEventListener('click',()=>{
 
     let newupi2= document.querySelector(".phonepe")
     newupi2.addEventListener("click",()=>{
+      newupi1.style.backgroundColor="#fff"
+    newupi3.style.backgroundColor="#fff"
        newupi2.style.backgroundColor="#f5f5f5"
        upiimg.style.backgroundColor="#f5f5f5"
        p.style.backgroundColor="#f5f5f5"  
@@ -139,6 +160,8 @@ upi.addEventListener('click',()=>{
     })
     let newupi3= document.querySelector(".paytmpe")
     newupi3.addEventListener("click",()=>{
+      newupi2.style.backgroundColor="#fff"
+    newupi1.style.backgroundColor="#fff"
        newupi3.style.backgroundColor="#f5f5f5"
        upiimg.style.backgroundColor="#f5f5f5"
        p.style.backgroundColor="#f5f5f5"  
@@ -176,7 +199,7 @@ let paybutton=document.querySelector("#payButton")
 atm.addEventListener('click',()=>{
    
   paybutton.innerHTML=`
-  <button id=paybtn>PAY ₹9987.0</button>
+  <button id=paybtn>PAY ₹${carprice}.0</button>
    
 
 `   
@@ -191,7 +214,7 @@ atm.addEventListener('click',()=>{
       <div>
       <div>
         <p>Enter Card Details</p>
-        <span>Amount: ₹9987.0</span>
+        <span>Amount: ₹${carprice}.0</span>
        </div>
       <div>
          <img src="https://www.zoomcar.com/build/760ee3019ff287f2caed7e40c92b1ca5.png">
@@ -250,6 +273,7 @@ input3.addEventListener("click",()=>{
 let mobile= document.querySelector(".mobile");
 
 mobile.addEventListener('click',()=>{
+  paybutton.innerHTML=null;
   atm.style.backgroundColor="#fff"
   upi.style.backgroundColor="#fff"
   mobile.style.backgroundColor="#f0f4ff"
@@ -259,7 +283,7 @@ mobile.addEventListener('click',()=>{
    <div>
    <div>
      <p>Mobile Wallet</p>
-     <span>Amount: ₹9987.0</span>
+     <span>Amount: ₹${carprice}.0</span>
     </div>
    <div>
       <img src="https://www.zoomcar.com/build/760ee3019ff287f2caed7e40c92b1ca5.png">
@@ -285,7 +309,7 @@ mobile.addEventListener('click',()=>{
     paytmtext.style.backgroundColor="#f5f5f5"
     
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹9987.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
   `   
@@ -296,6 +320,7 @@ mobile.addEventListener('click',()=>{
 let netbanking=document.querySelector('.net-banking')
 
 netbanking.addEventListener('click',()=>{
+  paybutton.innerHTML=null;
   netbanking.style.backgroundColor="#f0f4ff"
   mobile.style.backgroundColor="#ffff"
   upi.style.backgroundColor="#fff"
@@ -305,7 +330,7 @@ netbanking.addEventListener('click',()=>{
   <div>
   <div>
     <p>Net Banking</p>
-    <span>Amount: ₹9987.0</span>
+    <span>Amount: ₹${carprice}.0</span>
    </div>
   <div>
      <img src="https://www.zoomcar.com/build/760ee3019ff287f2caed7e40c92b1ca5.png">
@@ -378,10 +403,20 @@ netbanking.addEventListener('click',()=>{
 
   a.addEventListener("click",()=>{
     a.style.backgroundColor="#cfd8db"
-    document.querySelector(".paytm").style.backgroundColor="#cfd8db"
-    document.querySelector(".img3").style.backgroundColor="#cfd8db"
+    b.style.backgroundColor="#fff"
+    c.style.backgroundColor="#fff"
+    d.style.backgroundColor="#fff"
+    e.style.backgroundColor="#fff"
+    f.style.backgroundColor="#fff"
+    g.style.backgroundColor="#fff"
+    h.style.backgroundColor="#fff"
+
+    
+
+    // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
+    // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹9987.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
   `   
@@ -389,10 +424,18 @@ netbanking.addEventListener('click',()=>{
 
   b.addEventListener("click",()=>{
     b.style.backgroundColor="#cfd8db"
-    document.querySelector(".paytm").style.backgroundColor="#cfd8db"
-    document.querySelector(".img3").style.backgroundColor="#cfd8db"
+    a.style.backgroundColor="#fff"
+   
+    c.style.backgroundColor="#fff"
+    d.style.backgroundColor="#fff"
+    e.style.backgroundColor="#fff"
+    f.style.backgroundColor="#fff"
+    g.style.backgroundColor="#fff"
+    h.style.backgroundColor="#fff"
+    // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
+    // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹9987.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
   `   
@@ -400,10 +443,18 @@ netbanking.addEventListener('click',()=>{
 
   c.addEventListener("click",()=>{
     c.style.backgroundColor="#cfd8db"
-    document.querySelector(".paytm").style.backgroundColor="#cfd8db"
-    document.querySelector(".img3").style.backgroundColor="#cfd8db"
+    a.style.backgroundColor="#fff"
+    b.style.backgroundColor="#fff"
+   
+    d.style.backgroundColor="#fff"
+    e.style.backgroundColor="#fff"
+    f.style.backgroundColor="#fff"
+    g.style.backgroundColor="#fff"
+    h.style.backgroundColor="#fff"
+    // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
+    // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹9987.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
   `   
@@ -411,10 +462,18 @@ netbanking.addEventListener('click',()=>{
 
   d.addEventListener("click",()=>{
     d.style.backgroundColor="#cfd8db"
-    document.querySelector(".paytm").style.backgroundColor="#cfd8db"
-    document.querySelector(".img3").style.backgroundColor="#cfd8db"
+    a.style.backgroundColor="#fff"
+    b.style.backgroundColor="#fff"
+    c.style.backgroundColor="#fff"
+    
+    e.style.backgroundColor="#fff"
+    f.style.backgroundColor="#fff"
+    g.style.backgroundColor="#fff"
+    h.style.backgroundColor="#fff"
+    // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
+    // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹9987.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
   `   
@@ -422,10 +481,18 @@ netbanking.addEventListener('click',()=>{
 
    e.addEventListener("click",()=>{
     e.style.backgroundColor="#cfd8db"
-    document.querySelector(".paytm").style.backgroundColor="#cfd8db"
-    document.querySelector(".img3").style.backgroundColor="#cfd8db"
+    a.style.backgroundColor="#fff"
+    b.style.backgroundColor="#fff"
+    c.style.backgroundColor="#fff"
+    d.style.backgroundColor="#fff"
+    
+    f.style.backgroundColor="#fff"
+    g.style.backgroundColor="#fff"
+    h.style.backgroundColor="#fff"
+    // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
+    // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹9987.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
   `   
@@ -433,20 +500,36 @@ netbanking.addEventListener('click',()=>{
 
   f.addEventListener("click",()=>{
     f.style.backgroundColor="#cfd8db"
-    document.querySelector(".paytm").style.backgroundColor="#cfd8db"
-    document.querySelector(".img3").style.backgroundColor="#cfd8db"
+    a.style.backgroundColor="#fff"
+    b.style.backgroundColor="#fff"
+    c.style.backgroundColor="#fff"
+    d.style.backgroundColor="#fff"
+    e.style.backgroundColor="#fff"
+    
+    g.style.backgroundColor="#fff"
+    h.style.backgroundColor="#fff"
+    // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
+    // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹9987.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
   `   
   })
   g.addEventListener("click",()=>{
     g.style.backgroundColor="#cfd8db"
-    document.querySelector(".paytm").style.backgroundColor="#cfd8db"
-    document.querySelector(".img3").style.backgroundColor="#cfd8db"
+    a.style.backgroundColor="#fff"
+    b.style.backgroundColor="#fff"
+    c.style.backgroundColor="#fff"
+    d.style.backgroundColor="#fff"
+    e.style.backgroundColor="#fff"
+    f.style.backgroundColor="#fff"
+    
+    h.style.backgroundColor="#fff"
+    // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
+    // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹9987.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
   `   
@@ -454,10 +537,18 @@ netbanking.addEventListener('click',()=>{
 
   h.addEventListener("click",()=>{
     h.style.backgroundColor="#cfd8db"
-    document.querySelector(".paytm").style.backgroundColor="#cfd8db"
-    document.querySelector(".img3").style.backgroundColor="#cfd8db"
+    a.style.backgroundColor="#fff"
+    b.style.backgroundColor="#fff"
+    c.style.backgroundColor="#fff"
+    d.style.backgroundColor="#fff"
+    e.style.backgroundColor="#fff"
+    f.style.backgroundColor="#fff"
+    g.style.backgroundColor="#fff"
+   
+    // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
+    // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹9987.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
   `   
@@ -466,5 +557,16 @@ netbanking.addEventListener('click',()=>{
 
 })
 
+document.querySelector('.finalP').textContent=`₹${carprice}.0`
+document.querySelector('.hide-pay').textContent=`Amount: ₹${carprice}.0`
+//box div is on the 403 line in css
 
+let car_image=document.querySelector('.car-image')
+car_image.setAttribute("src",carimage);
 
+let car_name= document.querySelector('.car-name')
+car_name.textContent=carname
+
+document.querySelector('.transmission').textContent=transmission;
+
+document.querySelector('.fual-type').textContent=fualtype;
