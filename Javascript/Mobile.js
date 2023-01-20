@@ -1,4 +1,5 @@
 let sowcolor = document.getElementById('input')
+
 let inputvalue = document.getElementById('numberInput')
 let heading = document.getElementById('heading')
 let btn = document.getElementById('btn')
@@ -17,7 +18,7 @@ inputvalue.addEventListener('input', () => {
         btn.classList.add('Btn')
         sowcolor.classList.remove('rong')
         btn.addEventListener('click', () => {
-            window.location.assign('./MobileOtp.html')
+     window.location.assign('./MobileOtp.html')
             
              })
 
