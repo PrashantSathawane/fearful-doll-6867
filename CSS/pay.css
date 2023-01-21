@@ -294,9 +294,9 @@
     }
     #payment{
         width:85%;
-        
+        font-family: 'Roboto Slab', serif;
         margin:auto;
-        
+        margin-bottom: 100px;
         display: flex;
         justify-content: space-between;
     }

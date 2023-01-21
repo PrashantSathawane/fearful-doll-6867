@@ -96,8 +96,8 @@ upi.addEventListener('click',()=>{
       newupi2.style.backgroundColor="#fff"
     newupi3.style.backgroundColor="#fff"
        newupi1.style.backgroundColor="#f5f5f5"
-       upiimg.style.backgroundColor="#f5f5f5"
-       p.style.backgroundColor="#f5f5f5"  
+      //  upiimg.style.backgroundColor="#f5f5f5"
+      //  p.style.backgroundColor="#f5f5f5"  
        container2.innerHTML=null;
        container3.innerHTML=null;
        container1.innerHTML=`
@@ -116,6 +116,12 @@ upi.addEventListener('click',()=>{
           //  button.setAttribute("class","button")
           button.style.backgroundColor="#10a310"
           // button.classList.add(".act")
+            button.addEventListener('click',()=>{
+            setTimeout(()=>{
+              window.location.href="../index.html"
+            },1000)
+            
+          })  
           
        }
        })
@@ -130,8 +136,8 @@ upi.addEventListener('click',()=>{
       newupi1.style.backgroundColor="#fff"
     newupi3.style.backgroundColor="#fff"
        newupi2.style.backgroundColor="#f5f5f5"
-       upiimg.style.backgroundColor="#f5f5f5"
-       p.style.backgroundColor="#f5f5f5"  
+      //  upiimg.style.backgroundColor="#f5f5f5"
+      //  p.style.backgroundColor="#f5f5f5"  
        container1.innerHTML=null;
        container3.innerHTML=null;
        container2.innerHTML=`
@@ -150,6 +156,12 @@ upi.addEventListener('click',()=>{
           //  button.setAttribute("class","button")
           button.style.backgroundColor="#10a310"
           // button.classList.add(".act")
+            button.addEventListener('click',()=>{
+            setTimeout(()=>{
+              window.location.href="../index.html"
+            },1000)
+            
+          })
           
        }
        })
@@ -163,8 +175,8 @@ upi.addEventListener('click',()=>{
       newupi2.style.backgroundColor="#fff"
     newupi1.style.backgroundColor="#fff"
        newupi3.style.backgroundColor="#f5f5f5"
-       upiimg.style.backgroundColor="#f5f5f5"
-       p.style.backgroundColor="#f5f5f5"  
+      //  upiimg.style.backgroundColor="#f5f5f5"
+      //  p.style.backgroundColor="#f5f5f5"  
        container1.innerHTML=null;
        container2.innerHTML=null;
        container3.innerHTML=`
@@ -183,7 +195,12 @@ upi.addEventListener('click',()=>{
           //  button.setAttribute("class","button")
           button.style.backgroundColor="#10a310"
           // button.classList.add(".act")
-          
+          button.addEventListener('click',()=>{
+            setTimeout(()=>{
+              window.location.href="../index.html"
+            },1000)
+            
+          })
        }
        })
       
@@ -198,10 +215,11 @@ let atm = document.querySelector(".atm")
 let paybutton=document.querySelector("#payButton")
 atm.addEventListener('click',()=>{
    
+  
   paybutton.innerHTML=`
   <button id=paybtn>PAY ₹${carprice}.0</button>
    
-
+  
 `   
 
     atm.style.backgroundColor="#f0f4ff"
@@ -262,6 +280,12 @@ input3.addEventListener("click",()=>{
       let b= document.querySelector('#paybtn')
         b.style.backgroundColor="#10a310";
         b.style.color="white"
+         b.addEventListener('click',()=>{
+            setTimeout(()=>{
+              window.location.href="../index.html"
+            },1000)
+            
+          })  
   // }
 
    })
@@ -312,10 +336,11 @@ mobile.addEventListener('click',()=>{
     <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
-  `   
+  ` 
+ 
   })
-  
 })
+
 
 let netbanking=document.querySelector('.net-banking')
 
