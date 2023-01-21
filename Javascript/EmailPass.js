@@ -3,6 +3,16 @@ let inputvalue = document.getElementById('EmailInput')
 let heading = document.getElementById('heading')
 let btn = document.getElementById('btn')
 let maildata=document.getElementById('mail')
+let sowpass=document.querySelector('.showHidePw')
+sowpass.addEventListener('click',()=>{
+    if(inputvalue.type==='password'){
+        inputvalue.type='text'
+    }else{
+        inputvalue.type='password'
+    }
+})
+
+
 let maillist=JSON.parse(localStorage.getItem('User-mail'))||[]
 console.log(maillist);
  sowmailOnDOM(maillist)
