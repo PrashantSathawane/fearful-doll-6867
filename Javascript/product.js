@@ -97,7 +97,7 @@ function showMadeCards(fetCarDetailsData){
 
 individualCarcard.innerHTML = listOfcards;
   
-=======
+
 function showMadeCards(fetCarDetailsData) {
   // console.log(fetCarDetailsData)
   individualCarcard.innerHTML = null;
@@ -107,6 +107,7 @@ function showMadeCards(fetCarDetailsData) {
 
   individualCarcard.innerHTML = listOfcards;
 
+}
 }
 
 
