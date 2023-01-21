@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/index.css" />
-  
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@200&family=Poppins&display=swap" rel="stylesheet">
+
+
+
   </head>
   <body>
     <!-- Side nav strting -->
@@ -20,7 +25,12 @@
             src="https://cdn-icons-png.flaticon.com/512/456/456212.png"
             alt=""
           />
-          <p>Login or Signup</p>
+          <a
+            style="color: black; text-decoration: none"
+            href="./HTML/Login.html"
+          >
+            <p>Login or Signup</p></a
+          >
         </div>
         <div class="li-1">
           <img
@@ -30,10 +40,7 @@
           <p>Change City</p>
         </div>
         <div class="li-1">
-          <img
-            src="https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg"
-            alt=""
-          />
+          <img src="https://www.linkpicture.com/q/svfbiji.png" alt="" />
           <p>Become a host</p>
         </div>
         <div class="li-1">
@@ -68,18 +75,17 @@
         <div class="line"></div>
       </div>
       <div id="logo-1">
-        <img src="https://www.linkpicture.com/q/svfb-1.png"" alt="">
+        <img src="https://www.linkpicture.com/q/svfb-1.png" alt="">
       </div>
       <div id="Host-page-1">
-        <img
-          src="https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg"
-          alt=""
-        />
+        <img src="https://www.linkpicture.com/q/svfbiji.png" alt="" />
         <p>Become a host</p>
       </div>
       <div id="Login-direct">
+
         <a href="./HTML/Login.html"><h4>Login/Signup</h4></a>
         
+
       </div>
     </div>
     <script src="./Javascript/index.js"></script>
@@ -100,30 +106,79 @@
       <div id="trip-details">
         <!-- append the input boxes here -->
         <div
+          id="options-1"
           style="
             background-color: white;
             width: 500px;
             height: 50px;
             border: solid 1px;
             border-color: green;
-            border-radius: 5px;
+            border-radius: 8px;
           "
         >
-          <img
-            style="width: 20px; display: block; margin: auto; padding-top: 5px"
-            src="https://www.linkpicture.com/q/pngwing.com-copy.png"
-            alt=""
-          />
-          <p
-            style="
-              font-family: Poppins;
-              text-align: center;
-              font-size: 10px;
-              color: green;
-            "
-          >
-            Round trip
-          </p>
+          <div style="display: flex; width: 100%; height: 100%">
+            <button
+            onclick="locto0()"
+              style="
+                width: 50%;
+                height: 100%;
+                border: 0.5px solid;
+                border-color: green;
+                border-radius: 8px 0 0 8px;
+                cursor: pointer;
+              "
+            >
+              <img
+                style="
+                  width: 20px;
+                  display: block;
+                  margin: auto;
+                  padding-top: 5px;
+                "
+                src="https://www.linkpicture.com/q/pngwing.com-copy.png"
+                alt=""
+              />
+              <p
+                style="
+                  font-family: Poppins;
+                  text-align: center;
+                  font-size: 10px;
+                  color: green;
+                "
+              >
+                Round trip
+              </p>
+            </button>
+            <button
+              id="btnn-1"
+              onclick="locto()"
+              style="
+                width: 50%;
+                height: 100%;
+                border: 0.5px solid;
+                border-color: green;
+                border-radius: 0 8px 8px 0;
+                cursor: pointer;
+              "
+            >
+              <img
+                style="width: 20px; margin-top: 5px"
+                src="https://www.linkpicture.com/q/airplane-1.png"
+                alt=""
+              />
+              <p
+                style="
+                  font-family: Poppins;
+                  text-align: center;
+                  font-size: 10px;
+                  color: green;
+                  margin-top: -5px;
+                "
+              >
+                Airport Round trip
+              </p>
+            </button>
+          </div>
         </div>
         <div
           style="
@@ -132,7 +187,7 @@
             height: 50px;
             border: solid 1px;
             border-color: green;
-            border-radius: 5px;
+            border-radius: 8px;
             margin-top: 20px;
           "
         >
@@ -162,6 +217,7 @@
             </p>
           </div>
         </div>
+        <div id="locator-1"></div>
         <button
           style="
             background-color: green;
@@ -169,7 +225,7 @@
             height: 50px;
             border: solid 1px;
             border-color: green;
-            border-radius: 5px;
+            border-radius: 8px;
             margin-top: 20px;
           "
         >

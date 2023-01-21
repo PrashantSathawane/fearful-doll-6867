@@ -396,6 +396,10 @@ body::-webkit-scrollbar {
 
 }
 
+#RESET-BTN:hover{
+    cursor: pointer;
+    color: rgb(7, 106, 7);
+}
 
 .sortIcons {
     /* border: 4px solid; */
@@ -422,6 +426,8 @@ body::-webkit-scrollbar {
     font-family: "Poppins";
 }
 
+
+
 .sortIcons>div:hover {
     cursor: pointer;
     background: linear-gradient(to left, #10a310, #0b7a07);
@@ -429,9 +435,20 @@ body::-webkit-scrollbar {
 }
 
 
+
+
 .sortIcons>div>i {
     font-size: 1rem;
 }
+
+.Click-color {
+    color: white;
+    border: 1px solid;
+    cursor: pointer;
+    background: linear-gradient(to left, #10a310, #0b7a07);
+}
+
+
 
 .grid-change-seats-and-rating {
     grid-template-columns: repeat(3, 1fr);
@@ -475,14 +492,26 @@ body::-webkit-scrollbar {
 }
 
 #search-car-by-input-bar input {
-    width: 90%;
+    width: 70%;
     padding: 0.4rem;
     outline: 0.1rem;
 
 }
 
+#Search-car-by-btn {
+    background-color: green;
+    margin-left: 0.5rem;
+    color: white;
+    font-family: "Poppins";
+    width: 20%;
+    padding: 0.4rem;
+    border: none;
 
-
+}
+#Search-car-by-btn:hover{
+    cursor: pointer;
+    background-color: rgb(5, 81, 5);
+}
 
 
 
@@ -492,7 +521,7 @@ body::-webkit-scrollbar {
     width: 71%;
     /* border: 2px solid; */
     box-sizing: border-box;
-
+    margin-bottom: 50px;
 }
 
 
@@ -549,6 +578,7 @@ body::-webkit-scrollbar {
 }
 
 /* .images-ratings-gobtn {
+ 
 
 } */
 
@@ -581,6 +611,9 @@ body::-webkit-scrollbar {
 
 }
 
+.arrowbtn:hover {
+    cursor: pointer;
+}
 
 .arrowbtn {
     border: none;
