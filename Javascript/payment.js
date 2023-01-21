@@ -3,13 +3,13 @@ let container= document.querySelector(".change-container")
 
 var car=JSON.parse(localStorage.getItem("Individual_car_data"));
 let carname;
-let carprice;
+let carprice = localStorage.getItem("updatedPrice");
 let carimage;
 let transmission;
 let fualtype;
 car.forEach(el =>{
     carname=el.CarTitle;
-    carprice=el.CarPrice;
+    // carprice=el.CarPrice;
     carimage=el.CarImage;
     transmission=el.transmission;
     fualtype=el.fualtype;
@@ -31,7 +31,7 @@ offer.addEventListener('click',()=>{
        <div>
         <p>
         Payment Offers </p>
-        <span>Amount: ₹${carprice}.0</span>  
+        <span>Amount: ${carprice}.0</span>  
        </div>
       </div>  
     `
@@ -53,7 +53,7 @@ upi.addEventListener('click',()=>{
         <div >
           <div>
             <p>Select a UPI App</p>
-            <span>Amount: ₹${carprice}.0</span>
+            <span>Amount: ${carprice}.0</span>
            </div>
           <div>
              <img src="https://www.zoomcar.com/build/760ee3019ff287f2caed7e40c92b1ca5.png">
@@ -217,7 +217,7 @@ atm.addEventListener('click',()=>{
    
   
   paybutton.innerHTML=`
-  <button id=paybtn>PAY ₹${carprice}.0</button>
+  <button id=paybtn>PAY ${carprice}.0</button>
    
   
 `   
@@ -232,7 +232,7 @@ atm.addEventListener('click',()=>{
       <div>
       <div>
         <p>Enter Card Details</p>
-        <span>Amount: ₹${carprice}.0</span>
+        <span>Amount: ${carprice}.0</span>
        </div>
       <div>
          <img src="https://www.zoomcar.com/build/760ee3019ff287f2caed7e40c92b1ca5.png">
@@ -307,7 +307,7 @@ mobile.addEventListener('click',()=>{
    <div>
    <div>
      <p>Mobile Wallet</p>
-     <span>Amount: ₹${carprice}.0</span>
+     <span>Amount: ${carprice}.0</span>
     </div>
    <div>
       <img src="https://www.zoomcar.com/build/760ee3019ff287f2caed7e40c92b1ca5.png">
@@ -333,7 +333,7 @@ mobile.addEventListener('click',()=>{
     paytmtext.style.backgroundColor="#f5f5f5"
     
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ${carprice}.0</button>
      
   
   ` 
@@ -355,7 +355,7 @@ netbanking.addEventListener('click',()=>{
   <div>
   <div>
     <p>Net Banking</p>
-    <span>Amount: ₹${carprice}.0</span>
+    <span>Amount: ${carprice}.0</span>
    </div>
   <div>
      <img src="https://www.zoomcar.com/build/760ee3019ff287f2caed7e40c92b1ca5.png">
@@ -441,7 +441,7 @@ netbanking.addEventListener('click',()=>{
     // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
     // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ${carprice}.0</button>
      
   
   `   
@@ -460,7 +460,7 @@ netbanking.addEventListener('click',()=>{
     // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
     // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ${carprice}.0</button>
      
   
   `   
@@ -479,7 +479,7 @@ netbanking.addEventListener('click',()=>{
     // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
     // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ${carprice}.0</button>
      
   
   `   
@@ -498,7 +498,7 @@ netbanking.addEventListener('click',()=>{
     // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
     // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ${carprice}.0</button>
      
   
   `   
@@ -517,7 +517,7 @@ netbanking.addEventListener('click',()=>{
     // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
     // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ${carprice}.0</button>
      
   
   `   
@@ -536,7 +536,7 @@ netbanking.addEventListener('click',()=>{
     // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
     // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ${carprice}.0</button>
      
   
   `   
@@ -554,7 +554,7 @@ netbanking.addEventListener('click',()=>{
     // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
     // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ${carprice}.0</button>
      
   
   `   
@@ -573,7 +573,7 @@ netbanking.addEventListener('click',()=>{
     // document.querySelector(".paytm").style.backgroundColor="#cfd8db"
     // document.querySelector(".img3").style.backgroundColor="#cfd8db"
     paybutton.innerHTML=`
-    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
+    <button id="paybtn" style="color:white; background-color:#10a310" >PAY ${carprice}.0</button>
      
   
   `   
@@ -582,8 +582,8 @@ netbanking.addEventListener('click',()=>{
 
 })
 
-document.querySelector('.finalP').textContent=`₹${carprice}.0`
-document.querySelector('.hide-pay').textContent=`Amount: ₹${carprice}.0`
+document.querySelector('.finalP').textContent=`${carprice}.0`
+document.querySelector('.hide-pay').textContent=`Amount: ${carprice}.0`
 //box div is on the 403 line in css
 
 let car_image=document.querySelector('.car-image')

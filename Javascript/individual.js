@@ -95,6 +95,7 @@ PeaceofMind_265.addEventListener("click", () => {
 
 
 proceed_to_pay_btn.addEventListener("click", () => {
+    localStorage.setItem("updatedPrice",coupon_btn_section_text.innerText)
     window.location.href="../HTML/pay.html"
 })
 
