@@ -351,9 +351,10 @@ body::-webkit-scrollbar {
     /* border: 1px solid blue; */
     /* background-color: teal; */
     width: 68%;
-    height: 820px;
+    height: 870px;
     padding: 0px 0px 0px 1rem;
     box-sizing: border-box;
+
 }
 
 /* car-image section */
@@ -373,7 +374,7 @@ body::-webkit-scrollbar {
 #car-image-innerdiv img {
     display: block;
     margin: auto;
-    width: 62%;
+    width: 79%;
 }
 
 
@@ -564,7 +565,7 @@ body::-webkit-scrollbar {
 #container-for-right-section {
     /* border: 1px dashed green; */
     width: 30%;
-    height: 820px;
+    height: 870px;
     /* background-color: orangered; */
     padding: 0 0 0 1rem;
     box-sizing: border-box;

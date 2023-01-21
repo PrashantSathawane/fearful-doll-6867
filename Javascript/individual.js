@@ -95,7 +95,7 @@ PeaceofMind_265.addEventListener("click", () => {
 
 
 proceed_to_pay_btn.addEventListener("click", () => {
-    alert("Go to next page");
+    window.location.href="../HTML/pay.html"
 })
 
 

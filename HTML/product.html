@@ -140,7 +140,7 @@
                     <span>
                         <h3 style="display: inline;">Sort & Filters</h3>
                     </span>
-                    <button>RESET</button>
+                    <button id="RESET-BTN">RESET</button>
                 </div>
 
           <div class="Sortby-heading">
@@ -238,7 +238,7 @@
           </div>
 
                 <div class="sortIcons">
-                    <div onclick="filterHatchBack(`Hatch Back`)">
+                    <div onclick="filterHatchBack(`Hatchback`)">
                         <i class="fa-solid fa-car-side"></i>
                         <p>Hatch Back</p>
                     </div>
@@ -267,11 +267,11 @@
                         <i class="fa-solid fa-suitcase-rolling"></i>
                         <p>4 Seater</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyfiveSeats(`5 Seats`)">
                         <i class="fa-solid fa-suitcase-rolling"></i>
                         <p>5 Seater</p>
                     </div>
-                    <div>
+                    <div onclick="filterbySevenSeats(`7 Seats`)">
                         <i class="fa-solid fa-suitcase-rolling"></i>
                         <p>7 Seater</p>
                     </div>
@@ -285,19 +285,19 @@
           </div>
 
                 <div class="sortIcons">
-                    <div>
+                    <div onclick="filterbyPetrol(`Petrol`)">
                         <i class="fa-solid fa-oil-can"></i>
                         <p>Petrol</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyDiesel(`Diesel`)">
                         <i class="fa-solid fa-gas-pump"></i>
                         <p>Diesel</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyCNG(`CNG`)">
                         <i class="fa-solid fa-leaf"></i>
                         <p>CNG</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyElectric(`Electric`)">
                         <i class="fa-solid fa-charging-station"></i>
                         <p>Electric</p>
                     </div>
@@ -312,11 +312,11 @@
           </div>
 
                 <div class="sortIcons grid-change-transmission">
-                    <div>
+                    <div onclick="filterbyManual(`Manual`)">
                         <i class="fa-sharp fa-solid fa-sitemap"></i>
                         <p>Manual</p>
                     </div>
-                    <div>
+                    <div onclick="filterbyAutomatic(`Automatic`)">
                         <i class="fa-solid fa-robot"></i>
                         <p>Automatic</p>
                     </div>
