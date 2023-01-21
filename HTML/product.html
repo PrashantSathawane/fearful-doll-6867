@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/product.css">
-    <script src="https://kit.fontawesome.com/5cb8a0be4f.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="../CSS/product.css" />
+    <script
+      src="https://kit.fontawesome.com/5cb8a0be4f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
 <body>
-
-    <!-- start code injected on 20 Jan 1:00 am (remove this line before push) -->
+    <!-- the outermost container  -->
+    <!-- navabar -->
     <!-- Side nav strting -->
     <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="li-main">
+            <div class="li-1">
+                <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="" />
+                <p>Login or Signup</p>
+            </div>
+            <div class="li-1">
+                <img src="https://cdn-icons-png.flaticon.com/512/535/535188.png" alt="" />
+                <p>Change City</p>
+            </div>
+            <div class="li-1">
+                <img src="https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg" alt="" />
+                <p>Become a host</p>
+            </div>
+            <div class="li-1">
+                <img src="https://cdn-icons-png.flaticon.com/512/4252/4252474.png" alt="" />
+                <p>Zoom fleet vehicle policies</p>
+            </div>
+            <div class="li-1">
+                <img src="https://cdn-icons-png.flaticon.com/512/4252/4252474.png" alt="" />
+                <p>Zoom host vehicle policies</p>
+            </div>
+            <div class="li-1">
+                <img src="https://cdn-icons-png.flaticon.com/512/5617/5617243.png" alt="" />
+                <p>Help & Support</p>
+            </div>
+        </div>
+    </div>
+    <!-- side nav ending -->
+      <!-- Side nav strting -->
+      <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
@@ -25,12 +61,7 @@
               src="https://cdn-icons-png.flaticon.com/512/456/456212.png"
               alt=""
             />
-            <a
-              style="color: black; text-decoration: none"
-              href="./HTML/Login.html"
-            >
-              <p>Login or Signup</p></a
-            >
+            <p>Login or Signup</p>
           </div>
           <div class="li-1">
             <img
@@ -40,7 +71,10 @@
             <p>Change City</p>
           </div>
           <div class="li-1">
-            <img src="https://www.linkpicture.com/q/svfbiji.png" alt="" />
+            <img
+              src="https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg"
+              alt=""
+            />
             <p>Become a host</p>
           </div>
           <div class="li-1">
@@ -78,111 +112,133 @@
           <img src="https://www.linkpicture.com/q/svfb-1.png" alt="">
         </div>
         <div id="Host-page-1">
-          <img src="https://www.linkpicture.com/q/svfbiji.png" alt="" />
+          <img
+            src="https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg"
+            alt=""
+          />
           <p>Become a host</p>
         </div>
         <div id="Login-direct">
-          <a style="color: white; text-decoration: none" href="./HTML/Login.html"
-            ><h4>Login/Signup</h4></a
-          >
+          <h4>Login/Signup</h4>
         </div>
       </div>
-<<<<<<< HEAD
       <script src="../Javascript/index.js"></script>
-=======
->>>>>>> 81e5aa7e59dd4a2163869951a7a8f8ecf5eb6787
       <!-- Navbar Ending -->
-<!-- end of code injected on 20 Jan 1:00 am (remove this line before push)-->
+
+
 
 
 
     <!-- my code -->
     <!-- page container -->
     <div id="page-container">
-        <div id="page-result-container">
-
-
-            <div id="sort-filter-left-container">
-                <!-- div for sort and folter functionalities -->
+      <div id="page-result-container">
+        <div id="sort-filter-left-container">
+          <!-- div for sort and folter functionalities -->
 
                 <div id="sort-filter-reset-btn">
                     <span>
                         <h3 style="display: inline;">Sort & Filters</h3>
                     </span>
-                    <button id="RESET-BTN">RESET</button>
+                    <button>RESET</button>
                 </div>
 
-                <div class="Sortby-heading">
-                    <p>Sort By</p>
-                </div>
+          <div class="Sortby-heading">
+            <p>Sort By</p>
+          </div>
 
-                <!--sort icon list -->
+          <!--sort icon list -->
+          <div class="sortIcons">
+            <div
+              class="catch-and-addfunctionality"
+              onclick="RelavanceSort(`Relavance`)"
+            >
+              <i class="fa-solid fa-car"></i>
+              <p>Relevance</p>
+            </div>
+            <div
+              class="catch-and-addfunctionality"
+              onclick="AtoZSort(`High to Low`)"
+            >
+              <i class="fa-solid fa-arrow-down">₹</i>
+              <p>High to Low</p>
+            </div>
+            <div
+              class="catch-and-addfunctionality"
+              onclick="ZtoASort(`Low to High`)"
+            >
+              <i class="fa-solid fa-arrow-up">₹</i>
+              <p>Low to High</p>
+            </div>
+            <div
+              class="catch-and-addfunctionality"
+              onclick="RatingSort(`Best Rated`)"
+            >
+              <i class="fa-regular fa-star"></i>
+              <p>Best Rated</p>
+            </div>
+            <div
+              class="catch-and-addfunctionality"
+              onclick="DistanceSort(`Distance`)"
+            >
+              <i class="fa-sharp fa-solid fa-location-dot"></i>
+              <p>Distance</p>
+            </div>
+            <div
+              class="catch-and-addfunctionality"
+              onclick="CarAgeSort(`Car Age`)"
+            >
+              <i class="fa-solid fa-taxi"></i>
+              <p>Car Age</p>
+            </div>
+            <div
+              class="catch-and-addfunctionality"
+              onclick="KmsDrivenSort(`Kms Driven`)"
+            >
+              <i class="fa-solid fa-road"></i>
+              <p>Kms Driven</p>
+            </div>
+            <div
+              class="catch-and-addfunctionality"
+              onclick="PopularitySort(`Popularity`)"
+            >
+              <i class="fa-sharp fa-solid fa-bullhorn"></i>
+              <p>Popularity</p>
+            </div>
+          </div>
+
+          <!-- search functionality -->
+          <div id="search-car-by-container">
+            <div>
+              <i class="fa-solid fa-car"></i>
+            </div>
+            <div>
+              <div>Include specific cars</div>
+              <div id="different-text">
+                Any specific model in mind? Find it here. We will include them
+                to search
+              </div>
+              <div id="search-car-by-input-bar">
+                <input
+                  type="text"
+                  id="search-car-input"
+                  placeholder="Try search `City Honda` 🔍"
+                />
+                <button id="Search-car-by-btn">Search</button>
+              </div>
+            </div>
+          </div>
+          <hr style="border: 1px solid rgb(220, 217, 217)" />
+
+          <!-- filters -->
+
+          <!-- car type -->
+          <div class="Sortby-heading">
+            <p>Car Type</p>
+          </div>
+
                 <div class="sortIcons">
-                    <div class="catch-and-addfunctionality" onclick="RelavanceSort(`Relavance`)">
-                        <i class="fa-solid fa-car"></i>
-                        <p>Relevance</p>
-                    </div>
-                    <div class="catch-and-addfunctionality" onclick="AtoZSort(`High to Low`)">
-                        <i class="fa-solid fa-arrow-down">₹</i>
-                        <p>High to Low</p>
-                    </div>
-                    <div class="catch-and-addfunctionality" onclick="ZtoASort(`Low to High`)">
-                        <i class="fa-solid fa-arrow-up">₹</i>
-                        <p>Low to High</p>
-                    </div>
-                    <div class="catch-and-addfunctionality" onclick="RatingSort(`Best Rated`)">
-                        <i class="fa-regular fa-star"></i>
-                        <p>Best Rated</p>
-                    </div>
-                    <div class="catch-and-addfunctionality" onclick="DistanceSort(`Distance`)">
-                        <i class="fa-sharp fa-solid fa-location-dot"></i>
-                        <p>Distance</p>
-                    </div>
-                    <div class="catch-and-addfunctionality" onclick="CarAgeSort(`Car Age`)">
-                        <i class="fa-solid fa-taxi"></i>
-                        <p>Car Age</p>
-                    </div>
-                    <div class="catch-and-addfunctionality" onclick="KmsDrivenSort(`Kms Driven`)">
-                        <i class="fa-solid fa-road"></i>
-                        <p>Kms Driven</p>
-                    </div>
-                    <div class="catch-and-addfunctionality" onclick="PopularitySort(`Popularity`)">
-                        <i class="fa-sharp fa-solid fa-bullhorn"></i>
-                        <p>Popularity</p>
-                    </div>
-                </div>
-
-
-
-                <!-- search functionality -->
-                <div id="search-car-by-container">
-                    <div>
-                        <i class="fa-solid fa-car"></i>
-                    </div>
-                    <div>
-                        <div>Include specific cars</div>
-                        <div id="different-text">Any specific model in mind? Find it here. We will include them to
-                            search</div>
-                        <div id="search-car-by-input-bar">
-                            <input type="text" id="search-car-input" placeholder="Try search `City Honda` 🔍">
-                            <button id="Search-car-by-btn">Search</button>
-                        </div>
-                    </div>
-                </div>
-                <hr style="border:1px solid rgb(220, 217, 217);">
-
-
-
-                <!-- filters -->
-
-                <!-- car type -->
-                <div class="Sortby-heading">
-                    <p>Car Type</p>
-                </div>
-
-
-                <div class="sortIcons">
-                    <div onclick="filterHatchBack(`Hatchback`)">
+                    <div onclick="filterHatchBack(`Hatch Back`)">
                         <i class="fa-solid fa-car-side"></i>
                         <p>Hatch Back</p>
                     </div>
@@ -201,86 +257,86 @@
 
                 </div>
 
-                <!-- seats -->
-                <div class="Sortby-heading">
-                    <p>Seats</p>
-                </div>
+          <!-- seats -->
+          <div class="Sortby-heading">
+            <p>Seats</p>
+          </div>
 
                 <div class="sortIcons grid-change-seats-and-rating">
                     <div>
                         <i class="fa-solid fa-suitcase-rolling"></i>
                         <p>4 Seater</p>
                     </div>
-                    <div onclick="filterbyfiveSeats(`5 Seats`)">
+                    <div>
                         <i class="fa-solid fa-suitcase-rolling"></i>
                         <p>5 Seater</p>
                     </div>
-                    <div onclick="filterbySevenSeats(`7 Seats`)">
+                    <div>
                         <i class="fa-solid fa-suitcase-rolling"></i>
                         <p>7 Seater</p>
                     </div>
-                  
+
                 </div>
 
 
-                <!-- fuel type -->
-                <div class="Sortby-heading">
-                    <p>Fuel Type</p>
-                </div>
+          <!-- fuel type -->
+          <div class="Sortby-heading">
+            <p>Fuel Type</p>
+          </div>
 
                 <div class="sortIcons">
-                    <div onclick="filterbyPetrol(`Petrol`)">
+                    <div>
                         <i class="fa-solid fa-oil-can"></i>
                         <p>Petrol</p>
                     </div>
-                    <div onclick="filterbyDiesel(`Diesel`)">
+                    <div>
                         <i class="fa-solid fa-gas-pump"></i>
                         <p>Diesel</p>
                     </div>
-                    <div onclick="filterbyCNG(`CNG`)">
+                    <div>
                         <i class="fa-solid fa-leaf"></i>
                         <p>CNG</p>
                     </div>
-                    <div onclick="filterbyElectric(`Electric`)">
+                    <div>
                         <i class="fa-solid fa-charging-station"></i>
                         <p>Electric</p>
                     </div>
-                   
+
                 </div>
 
 
-                <!-- transimissions -->
+          <!-- transimissions -->
 
-                <div class="Sortby-heading">
-                    <p>Transimissions</p>
-                </div>
+          <div class="Sortby-heading">
+            <p>Transimissions</p>
+          </div>
 
                 <div class="sortIcons grid-change-transmission">
-                    <div onclick="filterbyManual(`Manual`)">
+                    <div>
                         <i class="fa-sharp fa-solid fa-sitemap"></i>
                         <p>Manual</p>
                     </div>
-                    <div onclick="filterbyAutomatic(`Automatic`)">
+                    <div>
                         <i class="fa-solid fa-robot"></i>
                         <p>Automatic</p>
                     </div>
-                  
+
                 </div>
 
-                <!-- ratings -->
+          <!-- ratings -->
 
-                <div class="Sortby-heading">
-                    <p>Ratings</p>
-                </div>
+          <div class="Sortby-heading">
+            <p>Ratings</p>
+          </div>
 
                 <div class="sortIcons grid-change-seats-and-rating">
-                    <div onclick="filterbyThreeplusRate(`3`)">
+                    <div>
                         <p>3+ rated</p>
                     </div>
-                    <div onclick="filterbyFourplusRate(`4`)">
+                    <div>
                         <p>4+ rated</p>
                     </div>
-                    <div onclick="filterbyAllRate(``)">
+                    <div>
                         <p>All</p>
                     </div>
 
@@ -291,27 +347,19 @@
 
 
 
-            <div id="search-result-right-container">
-                <!-- div for the search result display (show cars) -->
-                <div id="locationandDate-container">
-                    <div> <i class="fa-regular fa-circle-dot"></i> Location</div>
-                    <div> <i class="fa-regular fa-circle-dot"></i> Start and End</div>
-                </div>
+        <div id="search-result-right-container">
+          <!-- div for the search result display (show cars) -->
+          <div id="locationandDate-container">
+            <div><i class="fa-regular fa-circle-dot"></i> Location</div>
+            <div><i class="fa-regular fa-circle-dot"></i> Start and End</div>
+          </div>
 
-
-
-
-                <div id="car-search-result">
-                    <!-- append the data here -->
-
-
-                </div>
-
-            </div>
-
+          <div id="car-search-result">
+            <!-- append the data here -->
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
 <script src="../Javascript/product.js"></script>

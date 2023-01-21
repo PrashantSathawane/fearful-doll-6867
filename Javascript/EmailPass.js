@@ -39,7 +39,7 @@ inputvalue.addEventListener('input', () => {
         sowcolor.classList.remove('rong')
         btn.classList.add('Btn')
         btn.addEventListener('click', () => {
-            window.location.assign('./Email.html')
+            window.location.assign('../index.html')
 
         })
 
