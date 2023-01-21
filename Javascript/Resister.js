@@ -9,6 +9,7 @@ let btn = document.getElementById('btn')
 
 
 let Namelist=JSON.parse(localStorage.getItem('User-Name'))||[]
+let Emaillist=JSON.parse(localStorage.getItem('Email-data'))||[]
 console.log(Namelist);
 function changecolor1() {
     
@@ -29,6 +30,8 @@ inputvalue2.addEventListener('input', () => {
      window.location.assign('../index.html')
 
         })
+        Emaillist.push(value) 
+        localStorage.setItem('Email-data',JSON.stringify( Emaillist))
       
     }
     else {
@@ -42,7 +45,7 @@ inputvalue1.addEventListener('input', () => {
     let value1 = inputvalue1.value;
     console.log(value1);
 if(value1.length>=5)
-  Namelist.unshift(value1) 
+  Namelist.push(value1) 
   localStorage.setItem('User-Name',JSON.stringify(Namelist))
       
 })
