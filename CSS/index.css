@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
   font-family: Poppins;
 }
 #logo-1 {
-  margin-left: -55%;
+  margin-left: -57%;
 }
 #logo-1 img {
   width: 200px;
@@ -282,7 +282,7 @@ body::-webkit-scrollbar {
   height: 500px;
   width: 90%;
   top: 10%;
-  left: calc(30% - 300px);
+  left: calc(26% - 300px);
   display: flex;
 }
 

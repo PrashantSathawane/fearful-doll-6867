@@ -46,6 +46,6 @@ inputvalue.addEventListener('input', () => {
 }, 3000);
 
 window.setTimeout(()=>{
-    alert('Your OTP is Expire in 20 Second please enter corect OTP')
+    alert('Your OTP is Expire in 20 Second please enter correct OTP')
      
 },20000)
