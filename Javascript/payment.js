@@ -117,9 +117,10 @@ upi.addEventListener('click',()=>{
           button.style.backgroundColor="#10a310"
           // button.classList.add(".act")
             button.addEventListener('click',()=>{
+              alert(`your ${carname} is booked successfully👍!`)
             setTimeout(()=>{
               window.location.href="../index.html"
-            },1000)
+            },500)
             
           })  
           
@@ -157,9 +158,10 @@ upi.addEventListener('click',()=>{
           button.style.backgroundColor="#10a310"
           // button.classList.add(".act")
             button.addEventListener('click',()=>{
+              alert(`your ${carname} is booked successfully👍!`)
             setTimeout(()=>{
               window.location.href="../index.html"
-            },1000)
+            },500)
             
           })
           
@@ -196,9 +198,10 @@ upi.addEventListener('click',()=>{
           button.style.backgroundColor="#10a310"
           // button.classList.add(".act")
           button.addEventListener('click',()=>{
+            alert(`your ${carname} is booked successfully👍!`)
             setTimeout(()=>{
               window.location.href="../index.html"
-            },1000)
+            },500)
             
           })
        }
@@ -281,9 +284,10 @@ input3.addEventListener("click",()=>{
         b.style.backgroundColor="#10a310";
         b.style.color="white"
          b.addEventListener('click',()=>{
+          alert(`your ${carname} is booked successfully👍!`)
             setTimeout(()=>{
               window.location.href="../index.html"
-            },1000)
+            },500)
             
           })  
   // }
@@ -337,7 +341,13 @@ mobile.addEventListener('click',()=>{
      
   
   ` 
- 
+   let b2= document.getElementById('paybtn')
+   b2.addEventListener("click",()=>{
+    alert(`your ${carname} is booked successfully👍!`)
+    setTimeout(()=>{
+       window.location.href="../index.html"
+    },500)
+   })
   })
 })
 
@@ -414,8 +424,6 @@ netbanking.addEventListener('click',()=>{
    
     </div>
     
-    
-
   `
   let a=document.getElementById('1')
   let b=document.getElementById('2')
@@ -445,6 +453,14 @@ netbanking.addEventListener('click',()=>{
      
   
   `   
+  
+  let b2= document.getElementById('paybtn')
+  b2.addEventListener("click",()=>{
+    alert(`your ${carname} is booked successfully👍!`)
+   setTimeout(()=>{
+      window.location.href="../index.html"
+   },500)
+  })
   })
 
   b.addEventListener("click",()=>{
@@ -463,7 +479,14 @@ netbanking.addEventListener('click',()=>{
     <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
-  `   
+  `  
+  let b2= document.getElementById('paybtn')
+  b2.addEventListener("click",()=>{
+    alert(`your ${carname} is booked successfully👍!`)
+   setTimeout(()=>{
+      window.location.href="../index.html"
+   },500)
+  }) 
   })
 
   c.addEventListener("click",()=>{
@@ -483,6 +506,13 @@ netbanking.addEventListener('click',()=>{
      
   
   `   
+  let b2= document.getElementById('paybtn')
+  b2.addEventListener("click",()=>{
+    alert(`your ${carname} is booked successfully👍!`)
+   setTimeout(()=>{
+      window.location.href="../index.html"
+   },500)
+  })
   })
 
   d.addEventListener("click",()=>{
@@ -502,6 +532,13 @@ netbanking.addEventListener('click',()=>{
      
   
   `   
+  let b2= document.getElementById('paybtn')
+  b2.addEventListener("click",()=>{
+    alert(`your ${carname} is booked successfully👍!`)
+   setTimeout(()=>{
+      window.location.href="../index.html"
+   },500)
+  })
   })
 
    e.addEventListener("click",()=>{
@@ -521,6 +558,14 @@ netbanking.addEventListener('click',()=>{
      
   
   `   
+  let b2= document.getElementById('paybtn')
+  b2.addEventListener("click",()=>{
+
+    alert(`your ${carname} is booked successfully👍!`)
+   setTimeout(()=>{
+      window.location.href="../index.html"
+   },500)
+  })
   })
 
   f.addEventListener("click",()=>{
@@ -539,7 +584,14 @@ netbanking.addEventListener('click',()=>{
     <button id="paybtn" style="color:white; background-color:#10a310" >PAY ₹${carprice}.0</button>
      
   
-  `   
+  `
+  let b2= document.getElementById('paybtn')
+  b2.addEventListener("click",()=>{
+    alert(`your ${carname} is booked successfully👍!`)
+   setTimeout(()=>{
+      window.location.href="../index.html"
+   },500)
+  })   
   })
   g.addEventListener("click",()=>{
     g.style.backgroundColor="#cfd8db"
@@ -558,6 +610,13 @@ netbanking.addEventListener('click',()=>{
      
   
   `   
+  let b2= document.getElementById('paybtn')
+  b2.addEventListener("click",()=>{
+    alert(`your ${carname} is booked successfully👍!`)
+   setTimeout(()=>{
+      window.location.href="../index.html"
+   },500)
+  })
   })
 
   h.addEventListener("click",()=>{
@@ -577,6 +636,13 @@ netbanking.addEventListener('click',()=>{
      
   
   `   
+  let b2= document.getElementById('paybtn')
+  b2.addEventListener("click",()=>{
+    alert(`your ${carname} is booked successfully👍!`)
+   setTimeout(()=>{
+      window.location.href="../index.html"
+   },500)
+  })
   })
 
 
@@ -590,8 +656,8 @@ let car_image=document.querySelector('.car-image')
 car_image.setAttribute("src",carimage);
 
 let car_name= document.querySelector('.car-name')
-car_name.textContent=carname
+car_name.textContent=carname;
 
 document.querySelector('.transmission').textContent=transmission;
 
-document.querySelector('.fual-type').textContent=fualtype;
+ document.querySelector('.fual-type').textContent=fualtype;
