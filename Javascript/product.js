@@ -306,4 +306,3 @@ function filterbyAllRate(a){
 
 
 
-}
