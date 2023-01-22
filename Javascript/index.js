@@ -32,7 +32,7 @@ slider.addEventListener("mousemove", (e) => {
 // navigation bar
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "30%";
+  document.getElementById("mySidenav").style.width = "35%";
 }
 
 function closeNav() {

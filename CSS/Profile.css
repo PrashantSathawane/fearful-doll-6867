@@ -455,14 +455,16 @@ width: 35%;
 }
 .name{
   margin:5px 0px 0px 10px;
-
+  
   width: 35%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   /* margin-bottom: 20px; */
 }
-
+.name3{
+  width: 45px;
+}
 
 .gender{
   margin:5px 0px 0px 50px;
