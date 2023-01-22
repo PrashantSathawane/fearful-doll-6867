@@ -1,0 +1,12 @@
+#lli-4{
+    /* height: ; */
+    background-color: black;
+    padding: 30.6px;
+    color: white;
+    font-size: 14px;
+    font-family: "Poppins";
+}
+.closebtn{
+    background-color: white;
+    z-index: 900;
+}

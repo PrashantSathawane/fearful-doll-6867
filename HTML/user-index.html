@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="./CSS/index.css" />
-  <link rel="stylesheet" href="./CSS/user-index.css">
-
+  <link rel="stylesheet" href="../CSS/index.css" />
+  <!-- <link rel="stylesheet" href="../CSS/user-index.css"> -->
+   <link rel="stylesheet" href="../CSS/user-index.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@200&family=Poppins&display=swap"
     rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5cb8a0be4f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -68,7 +69,8 @@
     </div>
     <div id="Login-direct">
       <a style="color: white; text-decoration: none" href="./HTML/Login.html">
-        <h4>Login/Signup</h4>
+       <span style="font-size: 2rem;"><i class="fa-regular fa-circle-user"></i></span> 
+       <a href="../HTML/Profile.html" style="text-decoration-line: none; color: white;"><span id="showUsername" style="font-size: 1.2rem;">Login/Signup</span></a>
       </a>
     </div>
   </div>
@@ -680,6 +682,7 @@
 
 </html>
 
+<script src="../Javascript/index.js"></script>
 
 <script>
   let ttr_1 = document.getElementById("ttr-1");
@@ -687,6 +690,7 @@
   let MatchNo = toMatchdata.pop();
 
   let showThisUserOnpage;
+  let showUsername = document.getElementById("showUsername");
 
   // function to get matched user
   function fetchUser() {
@@ -711,14 +715,19 @@
       `
        <div id="lli-4" class="li-1">
                 <p>${userName}</p>
+                <br>
                 <p>${email}</p>
+                <br>
                 <p>${phone}</p>
         </div>
   `
   if(showThisUserOnpage){
     ttr_1.innerHTML = Userinf;
+    showUsername.innerText = userName;
+    localStorage.setItem("UserInfOnaccountP",JSON.stringify(showThisUserOnpage));
   }else{
     ttr_1.innerHTML = "Login/Signup";
+    showUsername.innerText = "Login/Signup"
   }
   }
 </script>

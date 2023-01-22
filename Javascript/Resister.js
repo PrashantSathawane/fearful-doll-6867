@@ -72,5 +72,5 @@ let Popup=document.getElementById('popup')
 // }
 function closepopup(){
     Popup.classList.remove('open-popup')
-    window.location.assign('../index.html')
+    window.location.assign('../HTML/user-index.html')
 }
