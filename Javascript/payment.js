@@ -1,6 +1,15 @@
 let offer= document.getElementById('offer');
 let container= document.querySelector(".change-container")
 
+let pickUpDate=localStorage.getItem('pickUpDate')
+let pickUpTime=localStorage.getItem('pickUpTime')
+let dropDate= localStorage.getItem('dropDate')
+let dropTime= localStorage.getItem('dropTime')
+console.log(pickUpDate,pickUpTime,dropDate,dropTime)
+
+document.querySelector('.pickup-time').textContent=`${pickUpDate} ${pickUpTime}`
+document.querySelector('.drop-time').textContent=`${dropDate} ${dropTime}`
+
 var car=JSON.parse(localStorage.getItem("Individual_car_data"));
 let carname;
 let carprice = localStorage.getItem("updatedPrice");
