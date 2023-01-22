@@ -30,7 +30,7 @@ inputvalue.addEventListener('input', () => {
         btn.classList.add('Btn')
         btn.addEventListener('click', () => {
 
-
+            window.location.assign('./Resister.html')
 
           
 

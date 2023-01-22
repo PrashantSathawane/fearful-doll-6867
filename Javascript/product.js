@@ -3,9 +3,13 @@
 let individualCarcard = document.getElementById("car-search-result");
 let search_input_Bar = document.getElementById("search-car-input");
 let Search_car_by_btn = document.getElementById("Search-car-by-btn");
-
+let UserInfOnaccountP = JSON.parse(localStorage.getItem("UserInfOnaccountP")) || []
 const api_url = "https://63c634eb4ebaa80285414b4d.mockapi.io/Cars"
 
+let showUserName = document.getElementById("showUserName")
+showUserName.innerText = UserInfOnaccountP[0].userName
+
+console.log(UserInfOnaccountP[0].userName)
 let catch_icon_div_add_function = document.getElementsByClassName("catch-and-addfunctionality");
 let needTosortArr = [];
 
@@ -28,6 +32,8 @@ function fetCarDetails(para, Searchstr) {
       console.log(err);
     })
 }
+
+
 
 
 

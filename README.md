@@ -9,7 +9,7 @@ Akshay
 Upendra
 Prashant
 
-Deploy Link - 
+Deploy Link -  https://sweet-madeleine-db3b7d.netlify.app/
 
 Tech Stack Used : -
 Languages
