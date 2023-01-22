@@ -1,3 +1,7 @@
+
+const LoginPage=document.querySelector('.Login-symbol')
+
+
 let sowcolor1 = document.getElementById('input1')
 let sowcolor2 = document.getElementById('input2')
 
@@ -11,7 +15,7 @@ let btn = document.getElementById('btn')
 let Namelist=JSON.parse(localStorage.getItem('User-Name'))||[]
 let Emaillist=JSON.parse(localStorage.getItem('Email-data'))||[]
 
-console.log(Namelist);
+// console.log(Namelist);
 function changecolor1() {
     
     sowcolor1.classList.add('Input')
@@ -28,11 +32,14 @@ inputvalue2.addEventListener('input', () => {
         sowcolor2.classList.remove('rong')
         btn.classList.add('Btn')
         btn.addEventListener('click', () => {
-     window.location.assign('../index.html')
-
+    //  window.location.assign('../index.html')
+    //  LoginPage.innerHTML='up'
+    Popup.classList.add('open-popup')
         })
 
-        Emaillist.push(value) 
+       
+            Emaillist.push(value)
+       
         localStorage.setItem('Email-data',JSON.stringify( Emaillist))
 
       
@@ -46,11 +53,24 @@ inputvalue2.addEventListener('input', () => {
 
 inputvalue1.addEventListener('input', () => {
     let value1 = inputvalue1.value;
-    console.log(value1);
+  
 if(value1.length>=5)
 
-  Namelist.push(value1) 
+
+    Namelist.push(value1) 
+    
+
 
   localStorage.setItem('User-Name',JSON.stringify(Namelist))
-      
+    
 })
+
+let Popup=document.getElementById('popup')
+
+// function openpopup() {
+//     Popup.classList.add('open-popup')
+// }
+function closepopup(){
+    Popup.classList.remove('open-popup')
+    window.location.assign('../index.html')
+}

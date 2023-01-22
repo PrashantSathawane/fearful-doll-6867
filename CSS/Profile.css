@@ -312,6 +312,7 @@
 }
 .Profile-image>img{
   width: 100%;
+  border-radius: 50%;
 }
 .details{
   /* align-items: center; */
@@ -452,13 +453,15 @@ width: 39%;
 }
 .name{
   margin:5px 0px 0px 10px;
-/* border-top: 1px solid red; */
-width: 35%;
+
+  width: 35%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   /* margin-bottom: 20px; */
 }
+
+
 .gender{
   margin:5px 0px 0px 10px;
 /* border: 1px solid red; */

@@ -13,7 +13,10 @@ contact.innerHTML=`OTP was sent to +91${data[i]}`
 delete datalist[i]
 }
 }
-// console.log(datalist);
+
+var randomOtp=Math.floor(Math.random()*1000000)
+
+
 
 function changecolor() {
     sowcolor.classList.add('Input')
@@ -22,7 +25,8 @@ function changecolor() {
 inputvalue.addEventListener('input', () => {
 
     let value = inputvalue.value;
-    if (value.length == 6) {
+   
+    if (+value== randomOtp&&value.length==6) {
         heading.innerText = ""
         sowcolor.classList.remove('rong')
         btn.classList.add('Btn')
@@ -32,13 +36,14 @@ inputvalue.addEventListener('input', () => {
         })
     }
     else {
-
         heading.innerText = 'Enter a valid OTP'
         sowcolor.classList.add('rong')
+        btn.classList.remove('Btn')
+      
     }
-
+    
 })
- var randomOtp=Math.floor(Math.random()*1000000)
+
  
    
  window.setTimeout(() => {

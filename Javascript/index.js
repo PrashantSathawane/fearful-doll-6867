@@ -1,3 +1,6 @@
+
+
+
 const slider = document.querySelector(".gallery");
 let isDown = false;
 let startX;
@@ -269,3 +272,7 @@ function locto0() {
   let syc = document.getElementById("locator-1");
   syc.innerHTML = ` `;
 }
+
+
+
+// document.querySelector('.Login-symbol').innerHTML='up'
