@@ -9,7 +9,7 @@ Akshay
 Upendra
 Prashant
 
-Deploy Link -
+Deploy Link - 
 
 Tech Stack Used : -
 Languages
@@ -34,16 +34,12 @@ Landing Page Landing Page
 
 
 
-
-** Payment Page**
-![Screenshot (130)](https://user-images.githubusercontent.com/112868723/213929119-68de9109-b4d4-4015-b09c-fb54ac37c1f8.png)
-
-
-
-
 ** All Product Page **
 ![Screenshot (129)](https://user-images.githubusercontent.com/112868723/213928992-c247766f-61c7-4284-bfef-6ad3384589aa.png)
 
+
+** Payment Page**
+![Screenshot (130)](https://user-images.githubusercontent.com/112868723/213929119-68de9109-b4d4-4015-b09c-fb54ac37c1f8.png)
 
 
 
