@@ -45,4 +45,4 @@ Landing Page Landing Page
 
 
 # About Project
-We did this project within 5 days in our unit-3 construct week. We worked on backend parts with includes various types of libraries into it and we have also added database for our project so user and products details will be saved and can be used accordingly. We have also added some cool functionality in our product page where you can filter the courses according to your choice and user can Signup and Login to buy the products.
+We did this project within 5 days in our unit-3 construct week.This website is about booking cars online. Using this website we can book the cars which are available in the site. There are various types of cars available, user can choose any car according to his/her preference. We worked on backend parts with includes various types of libraries into it and we have also added database for our project so user and products details will be saved and can be used accordingly. We have also added some cool functionality in our product page where you can filter the courses according to your choice and user can Signup and Login to buy the products.
