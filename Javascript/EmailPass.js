@@ -39,7 +39,8 @@ inputvalue.addEventListener('input', () => {
         sowcolor.classList.remove('rong')
         btn.classList.add('Btn')
         btn.addEventListener('click', () => {
-            window.location.assign('../index.html')
+
+            window.location.assign('../HTML/user-index.html')
 
         })
 

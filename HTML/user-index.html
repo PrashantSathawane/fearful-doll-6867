@@ -26,12 +26,7 @@
       </div>
 
 
-      <div class="li-1">
-        <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="" />
-        <a style="color: black; text-decoration: none" href="./HTML/Login.html">
-          <p>Login or Signup</p>
-        </a>
-      </div>
+      
       <div class="li-1">
         <img src="https://cdn-icons-png.flaticon.com/512/535/535188.png" alt="" />
         <p>Change City</p>
@@ -52,6 +47,12 @@
         <img src="https://cdn-icons-png.flaticon.com/512/5617/5617243.png" alt="" />
         <p>Help & Support</p>
       </div>
+      <div class="li-1">
+        <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="" />
+        <a style="color: black; text-decoration: none" href="../index.html">
+          <p>Logout</p>
+        </a>
+      </div>
     </div>
   </div>
   <!-- side nav ending -->
@@ -70,13 +71,13 @@
       <p>Become a host</p>
     </div>
     <div id="Login-direct">
-      <a style="color: white; text-decoration: none" href="./HTML/Login.html">
+      <a style="color: white; text-decoration: none" href="../HTML/Login.html">
        <span style="font-size: 2rem;"><i class="fa-regular fa-circle-user"></i></span> 
        <a href="../HTML/Profile.html" style="text-decoration-line: none; color: white;"><span id="showUsername" style="font-size: 1.2rem;">Login/Signup</span></a>
       </a>
     </div>
   </div>
-  <script src="./Javascript/index.js"></script>
+  <script src="../Javascript/index.js"></script>
   <!-- Navbar Ending -->
   <!-- main starts -->
   <div onclick="closeNav()" id="main-1">
@@ -191,7 +192,7 @@
               font-size: 15px;
               color: rgb(254, 254, 254);
               text-decoration: none;
-            " href="../fearful-doll-6867/HTML/product.html">
+            " href="../HTML/product.html">
           Find Cars
         </a>
       </button>
@@ -689,27 +690,69 @@
 <script>
   let ttr_1 = document.getElementById("ttr-1");
   let toMatchdata = JSON.parse(localStorage.getItem('cantact-number'));
-  let MatchNo = toMatchdata.pop();
+  let MatchNo = toMatchdata[toMatchdata.length-1];
 
-  let showThisUserOnpage;
+  let showThisUserOnpage 
+// = [
+//     {
+//         "userName": "Dharanesh",
+//         "email": "kumardharanesh@gmail.com",
+//         "phone": "9677989988",
+//         "id": "1",
+//         "image": ""
+//     },
+//     {
+//         "userName": "Prashant",
+//         "email": "prashantsathawane999@gmail.com",
+//         "phone": "9767599972",
+//         "id": "2",
+//         "image": ""
+//     },
+//     {
+//         "userName": "Akshay",
+//         "email": "akshaychavan@gmail.com",
+//         "phone": "9373849068",
+//         "id": "3",
+//         "image": ""
+//     },
+//     {
+//         "userName": "Upendra",
+//         "email": "upendrapal@gmail.com",
+//         "phone": "9569892524",
+//         "id": "4",
+//         "image": ""
+//     },
+//     {
+//         "userName": "Salman",
+//         "email": "salmankhan@gmail.com",
+//         "phone": "9022998239",
+//         "id": "5",
+//         "image": ""
+//     }
+// ]
   let showUsername = document.getElementById("showUsername");
 
   // function to get matched user
+  
   function fetchUser() {
     let promise = fetch("https://63c634eb4ebaa80285414b4d.mockapi.io/users");
     promise.then((res) => {
       return res.json();
     })
       .then((user) => {
-        showThisUserOnpage = user.filter((item) => item.phone === MatchNo);
+        let showThisUserOnpage = user.filter((item) => item.phone === MatchNo);
         console.log(showThisUserOnpage)
-        showMatch()
+        showMatch(showThisUserOnpage)
+      })
+      .catch((error)=>{
+        console.log(error)
       })
   }
   fetchUser();
 
   // function to show the matched user
-  function showMatch() {
+  function showMatch(showThisUserOnpage) {
+    // console.log(showThisUserOnpage)
     let userName = showThisUserOnpage[0].userName;
     let email = showThisUserOnpage[0].email;
     let phone = showThisUserOnpage[0].phone
@@ -724,12 +767,12 @@
         </div>
   `
   if(showThisUserOnpage){
-    ttr_1.innerHTML = Userinf;
-    showUsername.innerText = userName;
+     ttr_1.innerHTML = Userinf;
+     showUsername.innerText = userName;
     localStorage.setItem("UserInfOnaccountP",JSON.stringify(showThisUserOnpage));
   }else{
     ttr_1.innerHTML = "Login/Signup";
     showUsername.innerText = "Login/Signup"
   }
-  }
+   }
 </script>

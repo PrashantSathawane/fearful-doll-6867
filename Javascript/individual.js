@@ -7,6 +7,9 @@ let carDetailsTitle = document.getElementById("car-detail-title");
 let carDetailsFuel = document.getElementById("car-detail-fuel-type");
 let carDetailsSeats = document.getElementById("car-detail-seat-type");
 let carDetailsTransmission = document.getElementById("car-detail-transmission-type");
+let UserInfOnaccountP = JSON.parse(localStorage.getItem("UserInfOnaccountP")) || []
+let showUserName =  document.getElementById("showUserName")
+showUserName.innerText = UserInfOnaccountP[0].userName
 
 // driver details
 let driverDetailsName = document.getElementById("driver-details-driver-name");

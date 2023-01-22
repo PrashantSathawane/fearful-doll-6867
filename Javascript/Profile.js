@@ -5,7 +5,9 @@ let NumberData2=document.querySelector('.mobn')
 let Email=document.querySelector('.email-id')
 let Name2=document.querySelector('.name2')
 let Email2=document.querySelector('.Email')
-
+let UserInfOnaccountP = JSON.parse(localStorage.getItem("UserInfOnaccountP")) || []
+let showUserName = document.getElementById("showUserName")
+showUserName.innerText = UserInfOnaccountP[0].userName
 
 
 

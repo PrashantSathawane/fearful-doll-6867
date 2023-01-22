@@ -6,9 +6,12 @@ let pickUpTime=localStorage.getItem('pickUpTime')
 let dropDate= localStorage.getItem('dropDate')
 let dropTime= localStorage.getItem('dropTime')
 console.log(pickUpDate,pickUpTime,dropDate,dropTime)
+let UserInfOnaccountP = JSON.parse(localStorage.getItem("UserInfOnaccountP")) || []
+let showUserName =  document.getElementById("showUserName")
+showUserName.innerText = UserInfOnaccountP[0].userName
 
-document.querySelector('.pickup-time').textContent=`${pickUpDate} ${pickUpTime}`
-document.querySelector('.drop-time').textContent=`${dropDate} ${dropTime}`
+// document.querySelector('.pickup-time').textContent=`${pickUpDate} ${pickUpTime}`
+// document.querySelector('.drop-time').textContent=`${dropDate} ${dropTime}`
 
 var car=JSON.parse(localStorage.getItem("Individual_car_data"));
 let carname;
@@ -128,7 +131,7 @@ upi.addEventListener('click',()=>{
             button.addEventListener('click',()=>{
               alert(`your ${carname} is booked successfully👍!`)
             setTimeout(()=>{
-              window.location.href="../index.html"
+              window.location.href="../HTML/user-index.html"
             },500)
             
           })  
@@ -169,7 +172,7 @@ upi.addEventListener('click',()=>{
             button.addEventListener('click',()=>{
               alert(`your ${carname} is booked successfully👍!`)
             setTimeout(()=>{
-              window.location.href="../index.html"
+              window.location.href="../HTML/user-index.html"
             },500)
             
           })
@@ -209,7 +212,7 @@ upi.addEventListener('click',()=>{
           button.addEventListener('click',()=>{
             alert(`your ${carname} is booked successfully👍!`)
             setTimeout(()=>{
-              window.location.href="../index.html"
+              window.location.href="../HTML/user-index.html"
             },500)
             
           })
@@ -295,7 +298,7 @@ input3.addEventListener("click",()=>{
          b.addEventListener('click',()=>{
           alert(`your ${carname} is booked successfully👍!`)
             setTimeout(()=>{
-              window.location.href="../index.html"
+              window.location.href="../HTML/user-index.html"
             },500)
             
           })  
@@ -354,7 +357,7 @@ mobile.addEventListener('click',()=>{
    b2.addEventListener("click",()=>{
     alert(`your ${carname} is booked successfully👍!`)
     setTimeout(()=>{
-       window.location.href="../index.html"
+       window.location.href="../HTML/user-index.html"
     },500)
    })
   })
@@ -467,7 +470,7 @@ netbanking.addEventListener('click',()=>{
   b2.addEventListener("click",()=>{
     alert(`your ${carname} is booked successfully👍!`)
    setTimeout(()=>{
-      window.location.href="../index.html"
+      window.location.href="../HTML/user-index.html"
    },500)
   })
   })
@@ -493,7 +496,7 @@ netbanking.addEventListener('click',()=>{
   b2.addEventListener("click",()=>{
     alert(`your ${carname} is booked successfully👍!`)
    setTimeout(()=>{
-      window.location.href="../index.html"
+      window.location.href="../HTML/user-index.html"
    },500)
   }) 
   })
@@ -519,7 +522,7 @@ netbanking.addEventListener('click',()=>{
   b2.addEventListener("click",()=>{
     alert(`your ${carname} is booked successfully👍!`)
    setTimeout(()=>{
-      window.location.href="../index.html"
+      window.location.href="../HTML/user-index.html"
    },500)
   })
   })
@@ -545,7 +548,7 @@ netbanking.addEventListener('click',()=>{
   b2.addEventListener("click",()=>{
     alert(`your ${carname} is booked successfully👍!`)
    setTimeout(()=>{
-      window.location.href="../index.html"
+      window.location.href="../HTML/user-index.html"
    },500)
   })
   })
@@ -572,7 +575,7 @@ netbanking.addEventListener('click',()=>{
 
     alert(`your ${carname} is booked successfully👍!`)
    setTimeout(()=>{
-      window.location.href="../index.html"
+      window.location.href="../HTML/user-index.html"
    },500)
   })
   })
@@ -598,7 +601,7 @@ netbanking.addEventListener('click',()=>{
   b2.addEventListener("click",()=>{
     alert(`your ${carname} is booked successfully👍!`)
    setTimeout(()=>{
-      window.location.href="../index.html"
+      window.location.href="../HTML/user-index.html"
    },500)
   })   
   })
@@ -623,7 +626,7 @@ netbanking.addEventListener('click',()=>{
   b2.addEventListener("click",()=>{
     alert(`your ${carname} is booked successfully👍!`)
    setTimeout(()=>{
-      window.location.href="../index.html"
+      window.location.href="../HTML/user-index.html"
    },500)
   })
   })
@@ -649,7 +652,7 @@ netbanking.addEventListener('click',()=>{
   b2.addEventListener("click",()=>{
     alert(`your ${carname} is booked successfully👍!`)
    setTimeout(()=>{
-      window.location.href="../index.html"
+      window.location.href="../HTML/user-index.html"
    },500)
   })
   })
