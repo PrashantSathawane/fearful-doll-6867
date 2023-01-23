@@ -3,6 +3,8 @@
 Zoomcar-clone-website
 This was a collaborative project made by 5 members Executed in 5 days.
 
+Good morning/afternoon everyone, my name is Prashant and today I would like to introduce you to Zoomcar - a revolutionary car rental platform that allows customers to rent cars by the hour, day, week, or month. With our user-friendly website and mobile app, customers can easily browse and book a wide variety of vehicles, from compact cars to luxury SUVs. Our unique self-drive model eliminates the need for a traditional rental counter, allowing for a more convenient and flexible rental experience. Zoomcar's mission is to provide reliable and affordable transportation for everyone. Thank you for your time and attention, and I look forward to sharing more about Zoomcar with you today.
+
 Dharanesh
 Salman 
 Akshay
