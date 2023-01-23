@@ -3,7 +3,7 @@
 Zoomcar-clone-website
 This was a collaborative project made by 5 members Executed in 5 days.
 
-Good morning/afternoon everyone, my name is Prashant and today I would like to introduce you to Zoomcar - a revolutionary car rental platform that allows customers to rent cars by the hour, day, week, or month. With our user-friendly website and mobile app, customers can easily browse and book a wide variety of vehicles, from compact cars to luxury SUVs. Our unique self-drive model eliminates the need for a traditional rental counter, allowing for a more convenient and flexible rental experience. Zoomcar's mission is to provide reliable and affordable transportation for everyone. Thank you for your time and attention, and I look forward to sharing more about Zoomcar with you today.
+
 
 Dharanesh
 Salman 
@@ -47,4 +47,4 @@ Landing Page Landing Page
 
 
 # About Project
-We did this project within 5 days in our unit-3 construct week.This website is about booking cars online. Using this website we can book the cars which are available in the site. There are various types of cars available, user can choose any car according to his/her preference. We worked on backend parts with includes various types of libraries into it and we have also added database for our project so user and products details will be saved and can be used accordingly. We have also added some cool functionality in our product page where you can filter the courses according to your choice and user can Signup and Login to buy the products.
+We did this project within 5 days in our unit-3 construct week.Flexi Wheels is a car rental company based in India that allows customers to rent cars on an hourly, daily, or weekly basis. The company was founded in 2012 and has since expanded to several cities in India, as well as a few international locations. Flexi Wheels operates on a self-drive model, which means that customers can rent a car and drive it themselves, rather than hiring a driver. The company offers a variety of car models to choose from, and customers can book cars through the Flexi Wheels website or mobile app.
