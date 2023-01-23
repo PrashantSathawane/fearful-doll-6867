@@ -3,6 +3,8 @@
 Zoomcar-clone-website
 This was a collaborative project made by 5 members Executed in 5 days.
 
+We did this project within 5 days in our unit-3 construct week.Flexi Wheels is a car rental company based in India that allows customers to rent cars on an hourly, daily, or weekly basis. It has expanded to several cities & states in India, as well as a few international locations. Flexi Wheels operates on a self-drive model, which means that customers can rent a car and drive it themselves, rather than hiring a driver. The company offers a variety of car models to choose from, and customers can book cars through the Flexi Wheels website or mobile app.
+
 
 
 Dharanesh
