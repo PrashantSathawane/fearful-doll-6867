@@ -8,10 +8,10 @@ We did this project within 5 days in our unit-3 construct week.Flexi Wheels is a
 
 
 Dharanesh <br>
-Salman 
-Akshay
-Upendra
-Prashant
+Salman <br>
+Akshay <br>
+Upendra <br>
+Prashant <br>
 
 Deploy Link -  https://sweet-madeleine-db3b7d.netlify.app/
 
