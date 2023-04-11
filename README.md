@@ -28,7 +28,7 @@ Landing Page Landing Page
 
 
 ** Landing Page **
-![Screenshot (127)](https://user-images.githubusercontent.com/112868723/213928386-96f96fd3-924c-4b46-9eaa-
+![Screenshot (127)](https://user-images.githubusercontent.com/112868723/213928386-96f96fd3-924c-4b46-9eaa-)
 
 
 
