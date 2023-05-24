@@ -13,7 +13,7 @@ Akshay <br>
 Upendra <br>
 Prashant <br>
 
-Deploy Link -  https://sweet-madeleine-db3b7d.netlify.app/
+Deploy Link -  [https://sweet-madeleine-db3b7d.netlify.app/](https://644dfad2252c9713f067d005--lovely-pasca-14e6b1.netlify.app/)
 
 Tech Stack Used : -
 Languages
